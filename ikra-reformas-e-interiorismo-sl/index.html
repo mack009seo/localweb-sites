@@ -46,7 +46,12 @@
     <header id="header">
         <nav>
             <div class="logo">Ikra Reformas e Interiorismo, S.L.</div>
-            <ul class="nav-links">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#about">Nosotros</a></li>
@@ -262,6 +267,41 @@
             e.preventDefault();
             alert('¡Gracias por tu mensaje! En breve nos pondremos en contacto contigo.');
             e.target.reset();
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle?.addEventListener('click', () => {
+            navLinks?.classList.toggle('active');
+
+            // Hamburger animation
+            const spans = menuToggle.querySelectorAll('span');
+            menuToggle.classList.toggle('open');
+            if (menuToggle.classList.contains('open')) {
+                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(7px, -7px)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Close menu when clicking a link
+        navLinks?.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle?.classList.remove('open');
+                const spans = menuToggle?.querySelectorAll('span');
+                if (spans) {
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                }
+            });
         });
     </script>
 </body>
