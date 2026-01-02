@@ -177,8 +177,8 @@ nav {
 }
 
 .map-section {
-    padding: 4rem 2rem 6rem;
-    max-width: 1200px;
+    padding: 3rem 2rem 5rem;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -188,6 +188,34 @@ nav {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     border: 1px solid var(--glass-border);
+}
+
+/* Rating Badge */
+.rating-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: fit-content;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.stars {
+    color: #ffb400;
+    letter-spacing: 2px;
+}
+
+.rating-value {
+    font-weight: 700;
+}
+
+.reviews-count {
+    color: var(--text-muted);
 }
 
 .hero-image {
