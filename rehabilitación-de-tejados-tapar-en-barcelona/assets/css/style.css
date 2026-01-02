@@ -176,6 +176,20 @@ nav {
     max-width: 500px;
 }
 
+.map-section {
+    padding: 4rem 2rem 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-container {
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--glass-border);
+}
+
 .hero-image {
     position: relative;
     border-radius: var(--radius);
