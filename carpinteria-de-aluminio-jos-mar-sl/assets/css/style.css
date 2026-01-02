@@ -2,23 +2,21 @@
 
 :root {
     --primary: #818cf8;
-    /* Lighter Indigo for dark bg */
     --primary-hover: #6366f1;
-    --seconday: #0f172a;
-    /* Deep Slate Main BG */
+    --seconday: #1e293b;
+    /* Slate 800 for accents */
     --accent: #f43f5e;
-    /* Vibrant Rose */
-    --text-main: #f1f5f9;
-    /* Light text for dark bg */
-    --text-muted: #94a3b8;
-    --bg-light: #334155;
-    /* Intermediate Slate */
-    --bg-card: #1e293b;
-    /* Lighter slate for cards */
+    --text-main: #f8fafc;
+    /* Very light gray */
+    --text-muted: #cbd5e1;
+    --bg-light: #475569;
+    /* Lighter Intermediate (Slate 600) */
+    --bg-card: #334155;
+    /* Slate 700 for depth */
     --white: #ffffff;
-    --glass: rgba(15, 23, 42, 0.8);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    --glass: rgba(15, 23, 42, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
     --radius: 20px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --whatsapp: #22c55e;
@@ -68,12 +66,14 @@ nav {
 
 .logo {
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: -0.02em;
-    color: var(--seconday);
+    color: var(--white);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links {
@@ -161,11 +161,12 @@ nav {
 
 .hero-content h1 {
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     color: var(--white);
     letter-spacing: -0.03em;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
@@ -247,8 +248,9 @@ nav {
 
 .section-title h2 {
     font-size: 2.5rem;
-    color: var(--seconday);
+    color: var(--white);
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 .grid {
