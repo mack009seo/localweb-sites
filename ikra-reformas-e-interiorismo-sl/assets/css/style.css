@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary: #6366f1;
-    /* Modern Indigo */
-    --primary-hover: #4f46e5;
+    --primary: #818cf8;
+    /* Lighter Indigo for dark bg */
+    --primary-hover: #6366f1;
     --seconday: #0f172a;
-    /* Deep Slate */
+    /* Deep Slate Main BG */
     --accent: #f43f5e;
     /* Vibrant Rose */
-    --text-main: #1e293b;
-    --text-muted: #64748b;
-    --bg-light: #f1f5f9;
+    --text-main: #f1f5f9;
+    /* Light text for dark bg */
+    --text-muted: #94a3b8;
+    --bg-light: #0f172a;
+    /* Dark background */
+    --bg-card: #1e293b;
+    /* Lighter slate for cards */
     --white: #ffffff;
-    --glass: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.2);
-    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    --radius: 16px;
+    --glass: rgba(15, 23, 42, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    --radius: 20px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --whatsapp: #25D366;
-    --whatsapp-dark: #128C7E;
+    --whatsapp: #22c55e;
+    --whatsapp-dark: #16a34a;
 }
 
 * {
@@ -47,9 +51,10 @@ header {
 
 header.scrolled {
     background: var(--glass);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px);
     padding: 1rem 0;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -113,8 +118,8 @@ nav {
 .hero {
     min-height: 100vh;
     padding: 8rem 2rem 4rem;
-    background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.05), transparent),
-        radial-gradient(circle at bottom left, rgba(244, 63, 94, 0.05), transparent);
+    background: radial-gradient(circle at top right, rgba(129, 140, 248, 0.1), transparent),
+        radial-gradient(circle at bottom left, rgba(244, 63, 94, 0.1), transparent);
     display: flex;
     align-items: center;
 }
@@ -139,7 +144,7 @@ nav {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    color: var(--seconday);
+    color: var(--white);
     letter-spacing: -0.03em;
 }
 
@@ -236,13 +241,14 @@ nav {
 }
 
 .card {
-    background: var(--white);
+    background: var(--bg-card);
     padding: 3rem;
     border-radius: var(--radius);
-    border: 1px solid #f1f5f9;
+    border: 1px solid var(--glass-border);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    color: var(--text-main);
 }
 
 .card:hover {
@@ -317,13 +323,33 @@ nav {
 }
 
 .contact-info {
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
     padding: 4rem;
     color: var(--white);
 }
 
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-highlight {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--white);
+}
+
+.info-highlight p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 .contact-form {
+    background: var(--bg-card);
     padding: 4rem;
+    color: var(--text-main);
 }
 
 .form-group {
@@ -341,7 +367,9 @@ nav {
 .form-group select {
     width: 100%;
     padding: 1rem;
-    border: 2px solid #f1f5f9;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--glass-border);
+    color: var(--white);
     border-radius: 12px;
     font-family: inherit;
     transition: var(--transition);
@@ -354,8 +382,8 @@ nav {
 
 footer {
     padding: 4rem 2rem;
-    background: var(--bg-light);
-    border-top: 1px solid #e2e8f0;
+    background: #080d1a;
+    border-top: 1px solid var(--glass-border);
     text-align: center;
 }
 
