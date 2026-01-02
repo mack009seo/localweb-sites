@@ -15,6 +15,34 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        :root {
+            --primary: {
+                    {
+                    PRIMARY_COLOR
+                }
+            }
+
+            ;
+
+            --primary-hover: {
+                    {
+                    PRIMARY_HOVER_COLOR
+                }
+            }
+
+            ;
+
+            --accent: {
+                    {
+                    ACCENT_COLOR
+                }
+            }
+
+            ;
+        }
+    </style>
+
     <!-- JSON-LD LocalBusiness Schema -->
     <script type="application/ld+json">
     {
@@ -32,12 +60,7 @@
       "url": "https://electricista-leandro.com",
       "telephone": "+34615610139",
       "openingHours": "Mo-Fr 08:30-19:00",
-      "areaServed": "Barcelona",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "0"
-      }
+      "areaServed": "Barcelona"
     }
     </script>
 </head>
@@ -77,13 +100,13 @@
                     <p>En ELECTRICISTA LEANDRO nos especializamos en ofrecer soluciones de Electricista con la máxima
                         calidad y profesionalidad que Barcelona merece.</p>
                     <div class="cta-group">
-                        <a href="#contact" class="btn btn-primary">Solicitar Presupuesto</a>
-                        <a href="https://wa.me/34615610139?text=Hola,%20estoy%20interesado%20en%20un%20presupuesto%20para%20Electricista"
-                            class="btn btn-whatsapp">
+                        <a href="https://wa.me/34615610139?text=Hola,%20necesito%20un%20presupuesto%20para%20Electricista"
+                            class="btn btn-primary" style="gap: 0.8rem;">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
-                                width="24" style="margin-right: 0.5rem;">
-                            WhatsApp
+                                width="24">
+                            Presupuesto por WhatsApp
                         </a>
+                        <a href="#contact" class="btn btn-outline">Más información</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -117,24 +140,6 @@
             </div>
         </section>
 
-        <!-- Stats / Trust Section -->
-        <section class="stats">
-            <div class="stats-container">
-                <div class="stat-item">
-                    <h3>5.0★</h3>
-                    <p>Valoración en Google</p>
-                </div>
-                <div class="stat-item">
-                    <h3>0+</h3>
-                    <p>Reseñas Reales</p>
-                </div>
-                <div class="stat-item">
-                    <h3>Barcelona</h3>
-                    <p>Cobertura Local</p>
-                </div>
-            </div>
-        </section>
-
         <!-- About Section -->
         <section id="about">
             <div class="hero-container" style="grid-template-columns: 1fr 1.2fr;">
@@ -163,45 +168,33 @@
                 <h2>Contacto Directo</h2>
                 <p>¿Tienes alguna duda o necesitas un presupuesto? Escríbenos ahora.</p>
             </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Hablemos</h3>
-                    <p>Estamos listos para ayudarte con tus proyectos de Electricista. Máxima rapidez y limpieza en
-                        Barcelona.</p>
+            <div class="contact-container" style="grid-template-columns: 1fr;">
+                <div class="contact-info"
+                    style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <h3>Presupuesto Inmediato</h3>
+                    <p style="font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem;">Evita esperas. Pulsa el botón
+                        de abajo para enviarnos un mensaje directo por WhatsApp y recibirás una respuesta rápida.</p>
 
-                    <div class="info-highlight">
-                        <p>📍 Carrer de los Castillejos, 251, Eixample, 08013 Barcelona</p>
+                    <div class="contact-highlights-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; width: 100%; margin-bottom: 3rem;">
+                        <div class="info-highlight" style="margin: 0;">
+                            <p>📍 Carrer de los Castillejos, 251, Eixample, 08013 Barcelona</p>
+                        </div>
+                        <div class="info-highlight" style="background: rgba(255,255,255,0.15); margin: 0;">
+                            <p>📞 +34615610139</p>
+                        </div>
                     </div>
 
-                    <div class="info-highlight" style="background: rgba(255,255,255,0.15);">
-                        <p>📞 +34615610139</p>
-                    </div>
+                    <a href="https://wa.me/34615610139?text=Hola,%20necesito%20un%20presupuesto%20para%20Electricista"
+                        class="btn btn-whatsapp btn-large-pulse"
+                        style="font-size: 1.5rem; padding: 1.5rem 3rem; width: fit-content;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                            width="32" style="margin-right: 1rem;">
+                        Contactar por WhatsApp
+                    </a>
 
-                    <p style="margin-top: 2rem;"><strong>Atención:</strong> Lunes a Viernes 08:30 - 19:00</p>
+                    <p style="margin-top: 2rem;"><strong>Horario:</strong> Lunes a Viernes 08:30 - 19:00</p>
                     <p><strong>Ubicación:</strong> Barcelona, Barcelona</p>
-                    <div class="cta-group" style="margin-top: 3rem;">
-                        <a href="tel:+34615610139" class="btn btn-outline">Llamada Directa</a>
-                        <a href="https://wa.me/34615610139" class="btn btn-whatsapp">WhatsApp</a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form action="https://formspree.io/f/mdakzwbp" method="POST" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" name="name" id="name" required placeholder="Tu nombre">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Teléfono de contacto</label>
-                            <input type="tel" name="phone" id="phone" value="+34" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea name="message" id="message" rows="4"
-                                placeholder="¿En qué podemos ayudarte?"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Presupuesto
-                            Gratuito</button>
-                    </form>
                 </div>
             </div>
         </section>
@@ -262,12 +255,6 @@
             });
         });
 
-        // Form placeholder submit
-        document.getElementById('contactForm')?.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('¡Gracias por tu mensaje! En breve nos pondremos en contacto contigo.');
-            e.target.reset();
-        });
 
         // Mobile Menu Toggle
         const menuToggle = document.getElementById('menuToggle');
