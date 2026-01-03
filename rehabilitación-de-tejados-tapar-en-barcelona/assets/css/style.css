@@ -218,6 +218,32 @@ nav {
     color: var(--text-muted);
 }
 
+/* Trust Badges */
+.trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.badge-icon {
+    color: var(--primary);
+    font-weight: bold;
+}
+
 .hero-image {
     position: relative;
     border-radius: var(--radius);
@@ -502,5 +528,87 @@ footer {
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2.2rem;
+    }
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 100px 0;
+    background: var(--bg-secondary);
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.faq-item {
+    background: var(--bg-primary);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.faq-item h3 {
+    color: var(--primary);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.faq-item h3::before {
+    content: "?";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 900;
+    opacity: 0.5;
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Sticky Mobile CTA */
+.sticky-mobile-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    z-index: 999;
+    border-top: 1px solid var(--glass-border);
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-mobile-cta .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 1.2rem;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .sticky-mobile-cta {
+        display: block;
+    }
+
+    /* Adjust floating button to not overlap */
+    .whatsapp-float {
+        bottom: 90px;
     }
 }
