@@ -1,81 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Demos | LocalWeb</title>
+    <title>Directorio de Servicios Locales</title>
     <style>
+        :root {
+            --primary: #3b82f6;
+            --bg: #0f172a;
+            --text: #f8fafc;
+            --card: #1e293b;
+        }
         body {
-            font-family: 'Inter', sans-serif;
-            background: #f8fafc;
-            color: #1e293b;
-            padding: 4rem 2rem;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
             max-width: 800px;
             margin: 0 auto;
         }
-
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 40px;
         }
-
-        ul {
-            list-style: none;
-            padding: 0;
+        .grid {
+            display: grid;
+            gap: 15px;
         }
-
-        li {
-            background: white;
-            margin-bottom: 1rem;
-            padding: 1.5rem;
+        .site-card {
+            background: var(--card);
+            padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, border-color 0.2s;
+            border: 1px solid transparent;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
-        a {
-            color: #6366f1;
-            text-decoration: none;
-            font-weight: 600;
+        .site-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
         }
-
-        .btn {
-            background: #6366f1;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
+        .site-card span {
+            color: var(--primary);
+            font-weight: bold;
         }
     </style>
 </head>
-
 <body>
-    <h1>🚀 Mis Demos Generadas</h1>
-    <p>Selecciona una landing page para ver la demo en vivo:</p>
-    <ul>
-        <li>
-            <span>Electricista Leandro</span>
-            <a href="electricista-leandro/" class="btn">Ver Demo</a>
-        </li>
-        <li>
-            <span>AMJ Pintores Barcelona</span>
-            <a href="amj-pintores-barcelona/" class="btn">Ver Demo</a>
-        </li>
-        <li>
-            <span>Carpintería Jos-mar SL</span>
-            <a href="carpinteria-de-aluminio-jos-mar-sl/" class="btn">Ver Demo</a>
-        </li>
-        <li>
-            <span>Rehabilitación de Tejados Tapar</span>
-            <a href="rehabilitación-de-tejados-tapar-en-barcelona/" class="btn">Ver Demo</a>
-        </li>
-        <li>
-            <span>Ikra Reformas</span>
-            <a href="ikra-reformas-e-interiorismo-sl/" class="btn">Ver Demo</a>
-        </li>
-    </ul>
+    <div class="container">
+        <h1>Directorio de Landing Pages</h1>
+        <div class="grid">
+            <a href="alumidina-carpintería-de-aluminio-y-pvc/" class="site-card"><div>Alumidina Carpintería De Aluminio Y Pvc</div><span>Ver Sitio &rarr;</span></a><a href="amj-pintores-barcelona/" class="site-card"><div>Amj Pintores Barcelona</div><span>Ver Sitio &rarr;</span></a><a href="carpinteria-de-aluminio-aluxlinea-sl/" class="site-card"><div>Carpinteria De Aluminio Aluxlinea Sl</div><span>Ver Sitio &rarr;</span></a><a href="carpinteria-de-aluminio-jos-mar-sl/" class="site-card"><div>Carpinteria De Aluminio Jos Mar Sl</div><span>Ver Sitio &rarr;</span></a><a href="electricista-leandro/" class="site-card"><div>Electricista Leandro</div><span>Ver Sitio &rarr;</span></a><a href="electricista-pompeya-24h/" class="site-card"><div>Electricista Pompeya 24H</div><span>Ver Sitio &rarr;</span></a><a href="ikra-reformas-e-interiorismo-sl/" class="site-card"><div>Ikra Reformas E Interiorismo Sl</div><span>Ver Sitio &rarr;</span></a><a href="instalador-de-aires-acondicionados-fs-installacions/" class="site-card"><div>Instalador De Aires Acondicionados Fs Installacions</div><span>Ver Sitio &rarr;</span></a><a href="jardinero-eixample-barcelona/" class="site-card"><div>Jardinero Eixample Barcelona</div><span>Ver Sitio &rarr;</span></a><a href="lampistería-maría-k-lampista/" class="site-card"><div>Lampistería María K Lampista</div><span>Ver Sitio &rarr;</span></a><a href="rehabilitación-de-tejados-tapar-en-barcelona/" class="site-card"><div>Rehabilitación De Tejados Tapar En Barcelona</div><span>Ver Sitio &rarr;</span></a><a href="rm-climatización-aerotermia-y-refrigeración/" class="site-card"><div>Rm Climatización Aerotermia Y Refrigeración</div><span>Ver Sitio &rarr;</span></a>
+        </div>
+    </div>
 </body>
-
 </html>
+    
