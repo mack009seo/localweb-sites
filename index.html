@@ -1,66 +1,2536 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directorio de Servicios Locales</title>
+    <title>Directorio de Servicios Profesionales en Barcelona | LocalWeb Hub</title>
+    <meta name="description"
+        content="Encuentra los mejores profesionales locales en Barcelona: electricistas, fontaneros, pintores y más. Calidad garantizada cerca de ti.">
+
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
         :root {
-            --primary: #3b82f6;
-            --bg: #0f172a;
-            --text: #f8fafc;
-            --card: #1e293b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --secondary: #64748b;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --accent: #f59e0b;
+            --radius: 12px;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
+
         body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 40px 20px;
+            background: var(--light);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--dark);
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1 {
+
+        .search-hero {
+            background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
+            color: white;
+            padding: 100px 20px;
             text-align: center;
-            color: var(--primary);
-            margin-bottom: 40px;
         }
-        .grid {
+
+        .search-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 40px auto 0;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 20px 25px;
+            border-radius: 50px;
+            border: none;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .category-grid {
+            max-width: 1200px;
+            margin: -50px auto 60px;
             display: grid;
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 0 20px;
         }
-        .site-card {
-            background: var(--card);
-            padding: 20px;
-            border-radius: 12px;
+
+        .category-card {
+            background: white;
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
             text-decoration: none;
-            color: inherit;
-            transition: transform 0.2s, border-color 0.2s;
-            border: 1px solid transparent;
+            color: var(--dark);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .business-list {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .business-card {
+            background: white;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            transition: all 0.2s ease;
         }
-        .site-card:hover {
-            transform: translateY(-2px);
-            border-color: var(--primary);
+
+        .business-card:hover {
+            border-left: 4px solid var(--primary);
+            padding-left: 26px;
         }
-        .site-card span {
-            color: var(--primary);
-            font-weight: bold;
+
+        .biz-info h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .biz-info p {
+            margin: 5px 0 0;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        .view-link {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 80px 0 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--dark);
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Directorio de Landing Pages</h1>
-        <div class="grid">
-            <a href="21-grados/" class="site-card"><div>21 Grados</div><span>Ver Sitio &rarr;</span></a><a href="3p-elèctric/" class="site-card"><div>3P Elèctric</div><span>Ver Sitio &rarr;</span></a><a href="a-one-locks-solutions/" class="site-card"><div>A One Locks Solutions</div><span>Ver Sitio &rarr;</span></a><a href="abid-aslam/" class="site-card"><div>Abid Aslam</div><span>Ver Sitio &rarr;</span></a><a href="aerosolar-renovables-sl/" class="site-card"><div>Aerosolar Renovables Sl</div><span>Ver Sitio &rarr;</span></a><a href="agencia-font/" class="site-card"><div>Agencia Font</div><span>Ver Sitio &rarr;</span></a><a href="agustín-rodríguez-lorite/" class="site-card"><div>Agustín Rodríguez Lorite</div><span>Ver Sitio &rarr;</span></a><a href="alfonso-montilla-corral/" class="site-card"><div>Alfonso Montilla Corral</div><span>Ver Sitio &rarr;</span></a><a href="algoma-instalaciones/" class="site-card"><div>Algoma Instalaciones</div><span>Ver Sitio &rarr;</span></a><a href="alumidina-carpintería-de-aluminio-y-pvc/" class="site-card"><div>Alumidina Carpintería De Aluminio Y Pvc</div><span>Ver Sitio &rarr;</span></a><a href="aluminios-ancar/" class="site-card"><div>Aluminios Ancar</div><span>Ver Sitio &rarr;</span></a><a href="aluminios-guerrero-bcn/" class="site-card"><div>Aluminios Guerrero Bcn</div><span>Ver Sitio &rarr;</span></a><a href="aluminios-miguel-sl/" class="site-card"><div>Aluminios Miguel Sl</div><span>Ver Sitio &rarr;</span></a><a href="aluminios-y-metales-realce-slu/" class="site-card"><div>Aluminios Y Metales Realce Slu</div><span>Ver Sitio &rarr;</span></a><a href="aluminis-y-vidres-diaz/" class="site-card"><div>Aluminis Y Vidres Diaz</div><span>Ver Sitio &rarr;</span></a><a href="amj-pintores-barcelona/" class="site-card"><div>Amj Pintores Barcelona</div><span>Ver Sitio &rarr;</span></a><a href="amperio-network-electricidad/" class="site-card"><div>Amperio Network Electricidad</div><span>Ver Sitio &rarr;</span></a><a href="antonio-alvarez-corral/" class="site-card"><div>Antonio Alvarez Corral</div><span>Ver Sitio &rarr;</span></a><a href="apfclima2023/" class="site-card"><div>Apfclima2023</div><span>Ver Sitio &rarr;</span></a><a href="aroaluminis-tot-en-alumini/" class="site-card"><div>Aroaluminis Tot En Alumini</div><span>Ver Sitio &rarr;</span></a><a href="artyestuc-pintors/" class="site-card"><div>Artyestuc Pintors</div><span>Ver Sitio &rarr;</span></a><a href="asociación-de-intaladores-de-electricidad-fontanería-gas-y-afines-del-valle-oriental/" class="site-card"><div>Asociación De Intaladores De Electricidad Fontanería Gas Y Afines Del Valle Oriental</div><span>Ver Sitio &rarr;</span></a><a href="averias-24-horas/" class="site-card"><div>Averias 24 Horas</div><span>Ver Sitio &rarr;</span></a><a href="badametal/" class="site-card"><div>Badametal</div><span>Ver Sitio &rarr;</span></a><a href="ballús-scp/" class="site-card"><div>Ballús Scp</div><span>Ver Sitio &rarr;</span></a><a href="barnainstal/" class="site-card"><div>Barnainstal</div><span>Ver Sitio &rarr;</span></a><a href="barnatecnic/" class="site-card"><div>Barnatecnic</div><span>Ver Sitio &rarr;</span></a><a href="basicgarden/" class="site-card"><div>Basicgarden</div><span>Ver Sitio &rarr;</span></a><a href="cal-sabater/" class="site-card"><div>Cal Sabater</div><span>Ver Sitio &rarr;</span></a><a href="calderas-y-aire-acondicionado-sant-cugat-659319761/" class="site-card"><div>Calderas Y Aire Acondicionado Sant Cugat 659319761</div><span>Ver Sitio &rarr;</span></a><a href="carpinteria-de-aluminio-aluvizu-decor/" class="site-card"><div>Carpinteria De Aluminio Aluvizu Decor</div><span>Ver Sitio &rarr;</span></a><a href="carpinteria-de-aluminio-aluxlinea-sl/" class="site-card"><div>Carpinteria De Aluminio Aluxlinea Sl</div><span>Ver Sitio &rarr;</span></a><a href="carpinteria-de-aluminio-cristaleria-tj/" class="site-card"><div>Carpinteria De Aluminio Cristaleria Tj</div><span>Ver Sitio &rarr;</span></a><a href="carpinteria-de-aluminio-jos-mar-sl/" class="site-card"><div>Carpinteria De Aluminio Jos Mar Sl</div><span>Ver Sitio &rarr;</span></a><a href="carpinteria-de-alumino-jjulve-sl/" class="site-card"><div>Carpinteria De Alumino Jjulve Sl</div><span>Ver Sitio &rarr;</span></a><a href="carpintero-ebanista-salvador-navarra-sant-cugat-del-vallés/" class="site-card"><div>Carpintero Ebanista Salvador Navarra Sant Cugat Del Vallés</div><span>Ver Sitio &rarr;</span></a><a href="carpintería-aluminio-parras/" class="site-card"><div>Carpintería Aluminio Parras</div><span>Ver Sitio &rarr;</span></a><a href="carpintería-de-aluminio-anga-antonio-garcía/" class="site-card"><div>Carpintería De Aluminio Anga Antonio García</div><span>Ver Sitio &rarr;</span></a><a href="carpintería-de-aluminio-hnos-paredes/" class="site-card"><div>Carpintería De Aluminio Hnos Paredes</div><span>Ver Sitio &rarr;</span></a><a href="carpintería-de-aluminio-miguel-angel-calso/" class="site-card"><div>Carpintería De Aluminio Miguel Angel Calso</div><span>Ver Sitio &rarr;</span></a><a href="carpintería-de-aluminio-y-hierro-aluclaver/" class="site-card"><div>Carpintería De Aluminio Y Hierro Aluclaver</div><span>Ver Sitio &rarr;</span></a><a href="carpintería-josé-ferreiro/" class="site-card"><div>Carpintería José Ferreiro</div><span>Ver Sitio &rarr;</span></a><a href="carpintería-keysis-alumini/" class="site-card"><div>Carpintería Keysis Alumini</div><span>Ver Sitio &rarr;</span></a><a href="carpintería-metálica-imi/" class="site-card"><div>Carpintería Metálica Imi</div><span>Ver Sitio &rarr;</span></a><a href="cañamas-jardins/" class="site-card"><div>Cañamas Jardins</div><span>Ver Sitio &rarr;</span></a><a href="centre-jardineria-masó-navarro/" class="site-card"><div>Centre Jardineria Masó Navarro</div><span>Ver Sitio &rarr;</span></a><a href="centro-de-jardinería-i-floristeria-argemí/" class="site-card"><div>Centro De Jardinería I Floristeria Argemí</div><span>Ver Sitio &rarr;</span></a><a href="cerrajero-alex-lhospitalet-de-llobregat/" class="site-card"><div>Cerrajero Alex Lhospitalet De Llobregat</div><span>Ver Sitio &rarr;</span></a><a href="cerrajero-luis-24-horas/" class="site-card"><div>Cerrajero Luis 24 Horas</div><span>Ver Sitio &rarr;</span></a><a href="cerrajero-moises-granollers/" class="site-card"><div>Cerrajero Moises Granollers</div><span>Ver Sitio &rarr;</span></a><a href="cerrajeros-luis-aperturas/" class="site-card"><div>Cerrajeros Luis Aperturas</div><span>Ver Sitio &rarr;</span></a><a href="cerrajeros-nou-barris-jordy/" class="site-card"><div>Cerrajeros Nou Barris Jordy</div><span>Ver Sitio &rarr;</span></a><a href="cerrajeroscalmet37/" class="site-card"><div>Cerrajeroscalmet37</div><span>Ver Sitio &rarr;</span></a><a href="cerrajería-dámaso-álvarez/" class="site-card"><div>Cerrajería Dámaso Álvarez</div><span>Ver Sitio &rarr;</span></a><a href="cerrajería-tecnillaves/" class="site-card"><div>Cerrajería Tecnillaves</div><span>Ver Sitio &rarr;</span></a><a href="checapintures-terrassa/" class="site-card"><div>Checapintures Terrassa</div><span>Ver Sitio &rarr;</span></a><a href="clicon-sccl/" class="site-card"><div>Clicon Sccl</div><span>Ver Sitio &rarr;</span></a><a href="climatiza-innovación/" class="site-card"><div>Climatiza Innovación</div><span>Ver Sitio &rarr;</span></a><a href="codina/" class="site-card"><div>Codina</div><span>Ver Sitio &rarr;</span></a><a href="cofely-españa-s-a-u/" class="site-card"><div>Cofely España S A U</div><span>Ver Sitio &rarr;</span></a><a href="conductos-de-aire-acondicionado-los-gallegos-sl/" class="site-card"><div>Conductos De Aire Acondicionado Los Gallegos Sl</div><span>Ver Sitio &rarr;</span></a><a href="conrado-bañón-montajes-eléctricos/" class="site-card"><div>Conrado Bañón Montajes Eléctricos</div><span>Ver Sitio &rarr;</span></a><a href="construccion-y-reformas-integrales/" class="site-card"><div>Construccion Y Reformas Integrales</div><span>Ver Sitio &rarr;</span></a><a href="contrahumitat/" class="site-card"><div>Contrahumitat</div><span>Ver Sitio &rarr;</span></a><a href="cristalería-castillo-carpintería-de-aluminio/" class="site-card"><div>Cristalería Castillo Carpintería De Aluminio</div><span>Ver Sitio &rarr;</span></a><a href="cuadros-eléctricos-e-instalaciones-slu/" class="site-card"><div>Cuadros Eléctricos E Instalaciones Slu</div><span>Ver Sitio &rarr;</span></a><a href="david-castro-lópez/" class="site-card"><div>David Castro López</div><span>Ver Sitio &rarr;</span></a><a href="decoart/" class="site-card"><div>Decoart</div><span>Ver Sitio &rarr;</span></a><a href="delsan/" class="site-card"><div>Delsan</div><span>Ver Sitio &rarr;</span></a><a href="desatascos-mataró-erm/" class="site-card"><div>Desatascos Mataró Erm</div><span>Ver Sitio &rarr;</span></a><a href="dimi-reformes-vallès-occidental/" class="site-card"><div>Dimi Reformes Vallès Occidental</div><span>Ver Sitio &rarr;</span></a><a href="dutxa-plat-sabadell/" class="site-card"><div>Dutxa Plat Sabadell</div><span>Ver Sitio &rarr;</span></a><a href="ecoalum-carpintería-sostenible/" class="site-card"><div>Ecoalum Carpintería Sostenible</div><span>Ver Sitio &rarr;</span></a><a href="eduard-sanchez-espin/" class="site-card"><div>Eduard Sanchez Espin</div><span>Ver Sitio &rarr;</span></a><a href="el-fontanero-juan/" class="site-card"><div>El Fontanero Juan</div><span>Ver Sitio &rarr;</span></a><a href="el-llauner-del-barri/" class="site-card"><div>El Llauner Del Barri</div><span>Ver Sitio &rarr;</span></a><a href="el-manetes-del-centre/" class="site-card"><div>El Manetes Del Centre</div><span>Ver Sitio &rarr;</span></a><a href="el-món-de-la-reforma/" class="site-card"><div>El Món De La Reforma</div><span>Ver Sitio &rarr;</span></a><a href="el-pintor-del-barrio/" class="site-card"><div>El Pintor Del Barrio</div><span>Ver Sitio &rarr;</span></a><a href="el-teu-serraller-alfred/" class="site-card"><div>El Teu Serraller Alfred</div><span>Ver Sitio &rarr;</span></a><a href="electofluids-solar-sl/" class="site-card"><div>Electofluids Solar Sl</div><span>Ver Sitio &rarr;</span></a><a href="electric2/" class="site-card"><div>Electric2</div><span>Ver Sitio &rarr;</span></a><a href="electricidad/" class="site-card"><div>Electricidad</div><span>Ver Sitio &rarr;</span></a><a href="electricidad-jaime-lorenzo/" class="site-card"><div>Electricidad Jaime Lorenzo</div><span>Ver Sitio &rarr;</span></a><a href="electricidad-ng-emergencias-24hagua-gas-datos-industrial-domiciliaria/" class="site-card"><div>Electricidad Ng Emergencias 24Hagua Gas Datos Industrial Domiciliaria</div><span>Ver Sitio &rarr;</span></a><a href="electricidad-quimi/" class="site-card"><div>Electricidad Quimi</div><span>Ver Sitio &rarr;</span></a><a href="electricidad-urgente-bcn/" class="site-card"><div>Electricidad Urgente Bcn</div><span>Ver Sitio &rarr;</span></a><a href="electricidad-y-telecomunicaciones-martínez/" class="site-card"><div>Electricidad Y Telecomunicaciones Martínez</div><span>Ver Sitio &rarr;</span></a><a href="electricista-económico-24-horas-terrassa/" class="site-card"><div>Electricista Económico 24 Horas Terrassa</div><span>Ver Sitio &rarr;</span></a><a href="electricista-leandro/" class="site-card"><div>Electricista Leandro</div><span>Ver Sitio &rarr;</span></a><a href="electricista-pompeya-24h/" class="site-card"><div>Electricista Pompeya 24H</div><span>Ver Sitio &rarr;</span></a><a href="electricistas-badalona/" class="site-card"><div>Electricistas Badalona</div><span>Ver Sitio &rarr;</span></a><a href="electricistas-terrassa/" class="site-card"><div>Electricistas Terrassa</div><span>Ver Sitio &rarr;</span></a><a href="electricistas-terrassa-electricidad-terraelectra/" class="site-card"><div>Electricistas Terrassa Electricidad Terraelectra</div><span>Ver Sitio &rarr;</span></a><a href="electro-servei/" class="site-card"><div>Electro Servei</div><span>Ver Sitio &rarr;</span></a><a href="electronova-installacions/" class="site-card"><div>Electronova Installacions</div><span>Ver Sitio &rarr;</span></a><a href="elteumanyabadalona/" class="site-card"><div>Elteumanyabadalona</div><span>Ver Sitio &rarr;</span></a><a href="empresa-de-restauracion-y-rehabilitacion-de-fachadas/" class="site-card"><div>Empresa De Restauracion Y Rehabilitacion De Fachadas</div><span>Ver Sitio &rarr;</span></a><a href="empresa-desatascos-mataró/" class="site-card"><div>Empresa Desatascos Mataró</div><span>Ver Sitio &rarr;</span></a><a href="ensalum/" class="site-card"><div>Ensalum</div><span>Ver Sitio &rarr;</span></a><a href="euro-light-group-serveis/" class="site-card"><div>Euro Light Group Serveis</div><span>Ver Sitio &rarr;</span></a><a href="fachadas-y-bajantes-sl/" class="site-card"><div>Fachadas Y Bajantes Sl</div><span>Ver Sitio &rarr;</span></a><a href="fcc-medio-ambiente-jardins-mataró/" class="site-card"><div>Fcc Medio Ambiente Jardins Mataró</div><span>Ver Sitio &rarr;</span></a><a href="fernando-herrera-hidalgo/" class="site-card"><div>Fernando Herrera Hidalgo</div><span>Ver Sitio &rarr;</span></a><a href="floristeria-grow-carmen/" class="site-card"><div>Floristeria Grow Carmen</div><span>Ver Sitio &rarr;</span></a><a href="floristeria-jardinet/" class="site-card"><div>Floristeria Jardinet</div><span>Ver Sitio &rarr;</span></a><a href="floristería-pètals-granollers/" class="site-card"><div>Floristería Pètals Granollers</div><span>Ver Sitio &rarr;</span></a><a href="florworld-garden-services-s-l/" class="site-card"><div>Florworld Garden Services S L</div><span>Ver Sitio &rarr;</span></a><a href="fontanero/" class="site-card"><div>Fontanero</div><span>Ver Sitio &rarr;</span></a><a href="fontanero-en-bellvitge/" class="site-card"><div>Fontanero En Bellvitge</div><span>Ver Sitio &rarr;</span></a><a href="fontanero-marroquí/" class="site-card"><div>Fontanero Marroquí</div><span>Ver Sitio &rarr;</span></a><a href="fontanero-y-electricista-24h/" class="site-card"><div>Fontanero Y Electricista 24H</div><span>Ver Sitio &rarr;</span></a><a href="fontanero-y-electricista-marc/" class="site-card"><div>Fontanero Y Electricista Marc</div><span>Ver Sitio &rarr;</span></a><a href="fontaneroelectricistapintor-reformas-lampista/" class="site-card"><div>Fontaneroelectricistapintor Reformas Lampista</div><span>Ver Sitio &rarr;</span></a><a href="fontanería-pompeya-24h/" class="site-card"><div>Fontanería Pompeya 24H</div><span>Ver Sitio &rarr;</span></a><a href="francesc-torras-durán/" class="site-card"><div>Francesc Torras Durán</div><span>Ver Sitio &rarr;</span></a><a href="francisco-claudio-díaz-segura/" class="site-card"><div>Francisco Claudio Díaz Segura</div><span>Ver Sitio &rarr;</span></a><a href="garden-4-vents/" class="site-card"><div>Garden 4 Vents</div><span>Ver Sitio &rarr;</span></a><a href="gestió-jardí-brugué/" class="site-card"><div>Gestió Jardí Brugué</div><span>Ver Sitio &rarr;</span></a><a href="gg-reformas/" class="site-card"><div>Gg Reformas</div><span>Ver Sitio &rarr;</span></a><a href="girbau-ace-by-nimnar/" class="site-card"><div>Girbau Ace By Nimnar</div><span>Ver Sitio &rarr;</span></a><a href="grup-eurovalles-electric/" class="site-card"><div>Grup Eurovalles Electric</div><span>Ver Sitio &rarr;</span></a><a href="guglie-pintores/" class="site-card"><div>Guglie Pintores</div><span>Ver Sitio &rarr;</span></a><a href="helios-energy-europe-sl/" class="site-card"><div>Helios Energy Europe Sl</div><span>Ver Sitio &rarr;</span></a><a href="hidrofonts-tècnics-de-laigua-sl/" class="site-card"><div>Hidrofonts Tècnics De Laigua Sl</div><span>Ver Sitio &rarr;</span></a><a href="idc-cocinas/" class="site-card"><div>Idc Cocinas</div><span>Ver Sitio &rarr;</span></a><a href="ikra-reformas-e-interiorismo-sl/" class="site-card"><div>Ikra Reformas E Interiorismo Sl</div><span>Ver Sitio &rarr;</span></a><a href="infinitysun-sl/" class="site-card"><div>Infinitysun Sl</div><span>Ver Sitio &rarr;</span></a><a href="iniciativas-comerciales-eléctricas-sa/" class="site-card"><div>Iniciativas Comerciales Eléctricas Sa</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-dfg/" class="site-card"><div>Instalaciones Dfg</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-electricas-maldonado/" class="site-card"><div>Instalaciones Electricas Maldonado</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-g-manga/" class="site-card"><div>Instalaciones G Manga</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-jl-chicote-e-hijos-sl/" class="site-card"><div>Instalaciones Jl Chicote E Hijos Sl</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-jorvid/" class="site-card"><div>Instalaciones Jorvid</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-lamai/" class="site-card"><div>Instalaciones Lamai</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-llestanos-s-l/" class="site-card"><div>Instalaciones Llestanos S L</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-martínez-fernández-sl/" class="site-card"><div>Instalaciones Martínez Fernández Sl</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-t-osuna/" class="site-card"><div>Instalaciones T Osuna</div><span>Ver Sitio &rarr;</span></a><a href="instalaciones-vilchez-electricista-y-fontanero/" class="site-card"><div>Instalaciones Vilchez Electricista Y Fontanero</div><span>Ver Sitio &rarr;</span></a><a href="instalacions-garcía/" class="site-card"><div>Instalacions García</div><span>Ver Sitio &rarr;</span></a><a href="instalaciónes-empire-ros-servicios/" class="site-card"><div>Instalaciónes Empire Ros Servicios</div><span>Ver Sitio &rarr;</span></a><a href="instalaciónes-y-reparaciones-batllevell-sl/" class="site-card"><div>Instalaciónes Y Reparaciones Batllevell Sl</div><span>Ver Sitio &rarr;</span></a><a href="instalador-de-aires-acondicionados-fs-installacions/" class="site-card"><div>Instalador De Aires Acondicionados Fs Installacions</div><span>Ver Sitio &rarr;</span></a><a href="instaladores-de-climatización/" class="site-card"><div>Instaladores De Climatización</div><span>Ver Sitio &rarr;</span></a><a href="instaladores-placas-solares/" class="site-card"><div>Instaladores Placas Solares</div><span>Ver Sitio &rarr;</span></a><a href="installacions-hidalgo-ruiz/" class="site-card"><div>Installacions Hidalgo Ruiz</div><span>Ver Sitio &rarr;</span></a><a href="installacions-ismax-sl/" class="site-card"><div>Installacions Ismax Sl</div><span>Ver Sitio &rarr;</span></a><a href="installacions-mp/" class="site-card"><div>Installacions Mp</div><span>Ver Sitio &rarr;</span></a><a href="installacions-xavi-martí/" class="site-card"><div>Installacions Xavi Martí</div><span>Ver Sitio &rarr;</span></a><a href="integral-de-ingeniería-e-instalaciones-s-l/" class="site-card"><div>Integral De Ingeniería E Instalaciones S L</div><span>Ver Sitio &rarr;</span></a><a href="intergas-2015-sl-reparación-instalación-y-mantenimiento-calderas-y-aparatos-de-aire-acondicionado/" class="site-card"><div>Intergas 2015 Sl Reparación Instalación Y Mantenimiento Calderas Y Aparatos De Aire Acondicionado</div><span>Ver Sitio &rarr;</span></a><a href="j-r-pintors/" class="site-card"><div>J R Pintors</div><span>Ver Sitio &rarr;</span></a><a href="jaimeserraller-24h7d/" class="site-card"><div>Jaimeserraller 24H7D</div><span>Ver Sitio &rarr;</span></a><a href="jaiser-rehabilitación-de-fachadas-alquiler-y-montaje-de-andamios/" class="site-card"><div>Jaiser Rehabilitación De Fachadas Alquiler Y Montaje De Andamios</div><span>Ver Sitio &rarr;</span></a><a href="jarclos/" class="site-card"><div>Jarclos</div><span>Ver Sitio &rarr;</span></a><a href="jardi-art-sant-cugat/" class="site-card"><div>Jardi Art Sant Cugat</div><span>Ver Sitio &rarr;</span></a><a href="jardinero-eixample-barcelona/" class="site-card"><div>Jardinero Eixample Barcelona</div><span>Ver Sitio &rarr;</span></a><a href="jardiners-sant-adrià-sccl/" class="site-card"><div>Jardiners Sant Adrià Sccl</div><span>Ver Sitio &rarr;</span></a><a href="jardinería-concepció/" class="site-card"><div>Jardinería Concepció</div><span>Ver Sitio &rarr;</span></a><a href="jardinería-joan-cuquet/" class="site-card"><div>Jardinería Joan Cuquet</div><span>Ver Sitio &rarr;</span></a><a href="jardinería-magnólia/" class="site-card"><div>Jardinería Magnólia</div><span>Ver Sitio &rarr;</span></a><a href="jardinería-terrassa/" class="site-card"><div>Jardinería Terrassa</div><span>Ver Sitio &rarr;</span></a><a href="jardí-paradís/" class="site-card"><div>Jardí Paradís</div><span>Ver Sitio &rarr;</span></a><a href="jardí-pond/" class="site-card"><div>Jardí Pond</div><span>Ver Sitio &rarr;</span></a><a href="jefferson-construcciónes/" class="site-card"><div>Jefferson Construcciónes</div><span>Ver Sitio &rarr;</span></a><a href="jlãzaro-aplicació-decorativa-i-pintura/" class="site-card"><div>Jlãzaro Aplicació Decorativa I Pintura</div><span>Ver Sitio &rarr;</span></a><a href="joan-comallonga-galí/" class="site-card"><div>Joan Comallonga Galí</div><span>Ver Sitio &rarr;</span></a><a href="joaquín-garrido-algaba/" class="site-card"><div>Joaquín Garrido Algaba</div><span>Ver Sitio &rarr;</span></a><a href="joaquín-puigdomenech-sarabia/" class="site-card"><div>Joaquín Puigdomenech Sarabia</div><span>Ver Sitio &rarr;</span></a><a href="jorge-busamia-sl/" class="site-card"><div>Jorge Busamia Sl</div><span>Ver Sitio &rarr;</span></a><a href="josal-confort-sl/" class="site-card"><div>Josal Confort Sl</div><span>Ver Sitio &rarr;</span></a><a href="jose-antonio-martinez-lópez/" class="site-card"><div>Jose Antonio Martinez López</div><span>Ver Sitio &rarr;</span></a><a href="jose-barrios-pintor-fino-limpio-y-responsable/" class="site-card"><div>Jose Barrios Pintor Fino Limpio Y Responsable</div><span>Ver Sitio &rarr;</span></a><a href="josep-maria-cabané/" class="site-card"><div>Josep Maria Cabané</div><span>Ver Sitio &rarr;</span></a><a href="juan-francisco-soriano-martínez/" class="site-card"><div>Juan Francisco Soriano Martínez</div><span>Ver Sitio &rarr;</span></a><a href="jvc-profesional-europa-limited-sucursal-en-españa/" class="site-card"><div>Jvc Profesional Europa Limited Sucursal En España</div><span>Ver Sitio &rarr;</span></a><a href="la-botiga-del-clima/" class="site-card"><div>La Botiga Del Clima</div><span>Ver Sitio &rarr;</span></a><a href="la-ceba-jardins/" class="site-card"><div>La Ceba Jardins</div><span>Ver Sitio &rarr;</span></a><a href="la-llar-de-les-claus/" class="site-card"><div>La Llar De Les Claus</div><span>Ver Sitio &rarr;</span></a><a href="lampista-felix-galeano-y-ramon-linares/" class="site-card"><div>Lampista Felix Galeano Y Ramon Linares</div><span>Ver Sitio &rarr;</span></a><a href="lampistería-maría-k-lampista/" class="site-card"><div>Lampistería María K Lampista</div><span>Ver Sitio &rarr;</span></a><a href="lbdeco-es/" class="site-card"><div>Lbdeco Es</div><span>Ver Sitio &rarr;</span></a><a href="limpiezas-badalona-empresa-de-limpieza-en-badalona/" class="site-card"><div>Limpiezas Badalona Empresa De Limpieza En Badalona</div><span>Ver Sitio &rarr;</span></a><a href="limpiezas-granollers-empresa-de-limpieza-en-granollers/" class="site-card"><div>Limpiezas Granollers Empresa De Limpieza En Granollers</div><span>Ver Sitio &rarr;</span></a><a href="limpiezas-hospitalet-de-llobregat-empresa-de-limpieza/" class="site-card"><div>Limpiezas Hospitalet De Llobregat Empresa De Limpieza</div><span>Ver Sitio &rarr;</span></a><a href="limpiezas-neteco/" class="site-card"><div>Limpiezas Neteco</div><span>Ver Sitio &rarr;</span></a><a href="limpiezas-plata/" class="site-card"><div>Limpiezas Plata</div><span>Ver Sitio &rarr;</span></a><a href="little-garden-solutions-grow-shop/" class="site-card"><div>Little Garden Solutions Grow Shop</div><span>Ver Sitio &rarr;</span></a><a href="llibre-pintors/" class="site-card"><div>Llibre Pintors</div><span>Ver Sitio &rarr;</span></a><a href="lucin-cocinas-reforma-de-interiores/" class="site-card"><div>Lucin Cocinas Reforma De Interiores</div><span>Ver Sitio &rarr;</span></a><a href="macris/" class="site-card"><div>Macris</div><span>Ver Sitio &rarr;</span></a><a href="mapesi-terrassa-sl/" class="site-card"><div>Mapesi Terrassa Sl</div><span>Ver Sitio &rarr;</span></a><a href="marc-martí/" class="site-card"><div>Marc Martí</div><span>Ver Sitio &rarr;</span></a><a href="mcnet-servicios-de-limpieza-integrales/" class="site-card"><div>Mcnet Servicios De Limpieza Integrales</div><span>Ver Sitio &rarr;</span></a><a href="md-electric/" class="site-card"><div>Md Electric</div><span>Ver Sitio &rarr;</span></a><a href="mes-net-sl/" class="site-card"><div>Mes Net Sl</div><span>Ver Sitio &rarr;</span></a><a href="mi-espacio-int/" class="site-card"><div>Mi Espacio Int</div><span>Ver Sitio &rarr;</span></a><a href="mi-instalador/" class="site-card"><div>Mi Instalador</div><span>Ver Sitio &rarr;</span></a><a href="moder-alum/" class="site-card"><div>Moder Alum</div><span>Ver Sitio &rarr;</span></a><a href="moncuinesdisseny/" class="site-card"><div>Moncuinesdisseny</div><span>Ver Sitio &rarr;</span></a><a href="monjardinmultiservice/" class="site-card"><div>Monjardinmultiservice</div><span>Ver Sitio &rarr;</span></a><a href="montaje-cmg-2022-sl/" class="site-card"><div>Montaje Cmg 2022 Sl</div><span>Ver Sitio &rarr;</span></a><a href="mosquiteras-sabadell/" class="site-card"><div>Mosquiteras Sabadell</div><span>Ver Sitio &rarr;</span></a><a href="neix-instalnova-25/" class="site-card"><div>Neix Instalnova 25</div><span>Ver Sitio &rarr;</span></a><a href="neteges-cabassa/" class="site-card"><div>Neteges Cabassa</div><span>Ver Sitio &rarr;</span></a><a href="novanaturajardineria/" class="site-card"><div>Novanaturajardineria</div><span>Ver Sitio &rarr;</span></a><a href="novavida-reformas-integrales-sant-cugat/" class="site-card"><div>Novavida Reformas Integrales Sant Cugat</div><span>Ver Sitio &rarr;</span></a><a href="nueva-reforma-sabadell-reforma-de-cocina-sabadell-reforma-de-baño-sabadell-lampista-sabadell/" class="site-card"><div>Nueva Reforma Sabadell Reforma De Cocina Sabadell Reforma De Baño Sabadell Lampista Sabadell</div><span>Ver Sitio &rarr;</span></a><a href="o-p-instal-sl-electricista-hospitalet-de-llobregat/" class="site-card"><div>O P Instal Sl Electricista Hospitalet De Llobregat</div><span>Ver Sitio &rarr;</span></a><a href="obras-y-servicios-nemo-electricista-s-l/" class="site-card"><div>Obras Y Servicios Nemo Electricista S L</div><span>Ver Sitio &rarr;</span></a><a href="on-interiorisme-cuines-i-banys-sl/" class="site-card"><div>On Interiorisme Cuines I Banys Sl</div><span>Ver Sitio &rarr;</span></a><a href="pavid-net-s-l/" class="site-card"><div>Pavid Net S L</div><span>Ver Sitio &rarr;</span></a><a href="peñas-martínez-joaquín/" class="site-card"><div>Peñas Martínez Joaquín</div><span>Ver Sitio &rarr;</span></a><a href="pindeco/" class="site-card"><div>Pindeco</div><span>Ver Sitio &rarr;</span></a><a href="pint-decor/" class="site-card"><div>Pint Decor</div><span>Ver Sitio &rarr;</span></a><a href="pintadecor-sbd/" class="site-card"><div>Pintadecor Sbd</div><span>Ver Sitio &rarr;</span></a><a href="pintor-express/" class="site-card"><div>Pintor Express</div><span>Ver Sitio &rarr;</span></a><a href="pintor-granollers-centre/" class="site-card"><div>Pintor Granollers Centre</div><span>Ver Sitio &rarr;</span></a><a href="pintor-hugo/" class="site-card"><div>Pintor Hugo</div><span>Ver Sitio &rarr;</span></a><a href="pintor-mora-sl/" class="site-card"><div>Pintor Mora Sl</div><span>Ver Sitio &rarr;</span></a><a href="pintor-vizuete/" class="site-card"><div>Pintor Vizuete</div><span>Ver Sitio &rarr;</span></a><a href="pintores-la-remunta/" class="site-card"><div>Pintores La Remunta</div><span>Ver Sitio &rarr;</span></a><a href="pintores-mito/" class="site-card"><div>Pintores Mito</div><span>Ver Sitio &rarr;</span></a><a href="pintores-sant-josep/" class="site-card"><div>Pintores Sant Josep</div><span>Ver Sitio &rarr;</span></a><a href="pintors-garriga-maresme/" class="site-card"><div>Pintors Garriga Maresme</div><span>Ver Sitio &rarr;</span></a><a href="pintortinos/" class="site-card"><div>Pintortinos</div><span>Ver Sitio &rarr;</span></a><a href="pintura-i-decoració-ramón/" class="site-card"><div>Pintura I Decoració Ramón</div><span>Ver Sitio &rarr;</span></a><a href="pintura-y-decoración-imran/" class="site-card"><div>Pintura Y Decoración Imran</div><span>Ver Sitio &rarr;</span></a><a href="pinturas-maresme/" class="site-card"><div>Pinturas Maresme</div><span>Ver Sitio &rarr;</span></a><a href="pinturas-reformas-bazoli/" class="site-card"><div>Pinturas Reformas Bazoli</div><span>Ver Sitio &rarr;</span></a><a href="pinturas-y-de-decoración-mariano-cano/" class="site-card"><div>Pinturas Y De Decoración Mariano Cano</div><span>Ver Sitio &rarr;</span></a><a href="pinturas-y-reformas-tudela/" class="site-card"><div>Pinturas Y Reformas Tudela</div><span>Ver Sitio &rarr;</span></a><a href="pintures-i-deco-l-hospitalet-tienda-de-pinturas-y-decoración/" class="site-card"><div>Pintures I Deco L Hospitalet Tienda De Pinturas Y Decoración</div><span>Ver Sitio &rarr;</span></a><a href="puertas-alarmas-y-automatismo-turkamatic/" class="site-card"><div>Puertas Alarmas Y Automatismo Turkamatic</div><span>Ver Sitio &rarr;</span></a><a href="raco-cerrajeros-terrassa/" class="site-card"><div>Raco Cerrajeros Terrassa</div><span>Ver Sitio &rarr;</span></a><a href="rafael-soler-ferrer/" class="site-card"><div>Rafael Soler Ferrer</div><span>Ver Sitio &rarr;</span></a><a href="rebonito-decoracion/" class="site-card"><div>Rebonito Decoracion</div><span>Ver Sitio &rarr;</span></a><a href="reforma2/" class="site-card"><div>Reforma2</div><span>Ver Sitio &rarr;</span></a><a href="reformas-aj-mena/" class="site-card"><div>Reformas Aj Mena</div><span>Ver Sitio &rarr;</span></a><a href="reformas-al-cuadrado/" class="site-card"><div>Reformas Al Cuadrado</div><span>Ver Sitio &rarr;</span></a><a href="reformas-barcelona/" class="site-card"><div>Reformas Barcelona</div><span>Ver Sitio &rarr;</span></a><a href="reformas-hospitalet/" class="site-card"><div>Reformas Hospitalet</div><span>Ver Sitio &rarr;</span></a><a href="reformas-integrales/" class="site-card"><div>Reformas Integrales</div><span>Ver Sitio &rarr;</span></a><a href="reformas-integrales-24h-sl/" class="site-card"><div>Reformas Integrales 24H Sl</div><span>Ver Sitio &rarr;</span></a><a href="reformas-integrales-artservice/" class="site-card"><div>Reformas Integrales Artservice</div><span>Ver Sitio &rarr;</span></a><a href="reformas-integrales-badalona-mario/" class="site-card"><div>Reformas Integrales Badalona Mario</div><span>Ver Sitio &rarr;</span></a><a href="reformas-integrales-jterret/" class="site-card"><div>Reformas Integrales Jterret</div><span>Ver Sitio &rarr;</span></a><a href="reformas-j-y-p/" class="site-card"><div>Reformas J Y P</div><span>Ver Sitio &rarr;</span></a><a href="reformas-loaiza/" class="site-card"><div>Reformas Loaiza</div><span>Ver Sitio &rarr;</span></a><a href="reformas-vangi/" class="site-card"><div>Reformas Vangi</div><span>Ver Sitio &rarr;</span></a><a href="reformasintegral/" class="site-card"><div>Reformasintegral</div><span>Ver Sitio &rarr;</span></a><a href="reformes-dm/" class="site-card"><div>Reformes Dm</div><span>Ver Sitio &rarr;</span></a><a href="reformes-terrassa/" class="site-card"><div>Reformes Terrassa</div><span>Ver Sitio &rarr;</span></a><a href="reformes-tot-i-més/" class="site-card"><div>Reformes Tot I Més</div><span>Ver Sitio &rarr;</span></a><a href="rehabilitación-de-tejados-tapar-en-barcelona/" class="site-card"><div>Rehabilitación De Tejados Tapar En Barcelona</div><span>Ver Sitio &rarr;</span></a><a href="rekalum-carpinteria-d-alumini/" class="site-card"><div>Rekalum Carpinteria D Alumini</div><span>Ver Sitio &rarr;</span></a><a href="remuntdecor-scp/" class="site-card"><div>Remuntdecor Scp</div><span>Ver Sitio &rarr;</span></a><a href="rm-climatización-aerotermia-y-refrigeración/" class="site-card"><div>Rm Climatización Aerotermia Y Refrigeración</div><span>Ver Sitio &rarr;</span></a><a href="rmanaut/" class="site-card"><div>Rmanaut</div><span>Ver Sitio &rarr;</span></a><a href="roser-1988/" class="site-card"><div>Roser 1988</div><span>Ver Sitio &rarr;</span></a><a href="ruiz/" class="site-card"><div>Ruiz</div><span>Ver Sitio &rarr;</span></a><a href="rycasa-reguladores-y-const/" class="site-card"><div>Rycasa Reguladores Y Const</div><span>Ver Sitio &rarr;</span></a><a href="san-josep-banys-i-cuines/" class="site-card"><div>San Josep Banys I Cuines</div><span>Ver Sitio &rarr;</span></a><a href="santiago-serrano-garcía/" class="site-card"><div>Santiago Serrano García</div><span>Ver Sitio &rarr;</span></a><a href="sbd-revestiments/" class="site-card"><div>Sbd Revestiments</div><span>Ver Sitio &rarr;</span></a><a href="seduction-of-the-colors-sl/" class="site-card"><div>Seduction Of The Colors Sl</div><span>Ver Sitio &rarr;</span></a><a href="selsa-mataro/" class="site-card"><div>Selsa Mataro</div><span>Ver Sitio &rarr;</span></a><a href="serraller-mataró-1980/" class="site-card"><div>Serraller Mataró 1980</div><span>Ver Sitio &rarr;</span></a><a href="serraller-soriano-1987/" class="site-card"><div>Serraller Soriano 1987</div><span>Ver Sitio &rarr;</span></a><a href="serrallerandreus/" class="site-card"><div>Serrallerandreus</div><span>Ver Sitio &rarr;</span></a><a href="serralleria-aranda-luis/" class="site-card"><div>Serralleria Aranda Luis</div><span>Ver Sitio &rarr;</span></a><a href="serralleria-montpart/" class="site-card"><div>Serralleria Montpart</div><span>Ver Sitio &rarr;</span></a><a href="servinet-maresme-servicios-de-limpieza/" class="site-card"><div>Servinet Maresme Servicios De Limpieza</div><span>Ver Sitio &rarr;</span></a><a href="simanya-jardiners-can-roca/" class="site-card"><div>Simanya Jardiners Can Roca</div><span>Ver Sitio &rarr;</span></a><a href="sm-pinturas-revestimiento-y-mas/" class="site-card"><div>Sm Pinturas Revestimiento Y Mas</div><span>Ver Sitio &rarr;</span></a><a href="solarnavy-instalación-de-paneles-solares/" class="site-card"><div>Solarnavy Instalación De Paneles Solares</div><span>Ver Sitio &rarr;</span></a><a href="styl-cuines/" class="site-card"><div>Styl Cuines</div><span>Ver Sitio &rarr;</span></a><a href="sz-reformas-integrales/" class="site-card"><div>Sz Reformas Integrales</div><span>Ver Sitio &rarr;</span></a><a href="talleres-nogués-montajes-electrónicos/" class="site-card"><div>Talleres Nogués Montajes Electrónicos</div><span>Ver Sitio &rarr;</span></a><a href="tancal-carpintería-de-aluminio/" class="site-card"><div>Tancal Carpintería De Aluminio</div><span>Ver Sitio &rarr;</span></a><a href="tecnoelectric/" class="site-card"><div>Tecnoelectric</div><span>Ver Sitio &rarr;</span></a><a href="tecnova-rehabilitació-sl/" class="site-card"><div>Tecnova Rehabilitació Sl</div><span>Ver Sitio &rarr;</span></a><a href="totdecor-tot-cuina-sl/" class="site-card"><div>Totdecor Tot Cuina Sl</div><span>Ver Sitio &rarr;</span></a><a href="tucerrajerosantcugat/" class="site-card"><div>Tucerrajerosantcugat</div><span>Ver Sitio &rarr;</span></a><a href="universal-assistance/" class="site-card"><div>Universal Assistance</div><span>Ver Sitio &rarr;</span></a><a href="unión-electrónica/" class="site-card"><div>Unión Electrónica</div><span>Ver Sitio &rarr;</span></a><a href="vidrios-y-aluminios-e-martín/" class="site-card"><div>Vidrios Y Aluminios E Martín</div><span>Ver Sitio &rarr;</span></a><a href="vives-p-benavent/" class="site-card"><div>Vives P Benavent</div><span>Ver Sitio &rarr;</span></a><a href="wally-pinturas/" class="site-card"><div>Wally Pinturas</div><span>Ver Sitio &rarr;</span></a><a href="xavier-fontas/" class="site-card"><div>Xavier Fontas</div><span>Ver Sitio &rarr;</span></a>
+
+    <header class="search-hero">
+        <div class="container">
+            <h1>Directorio de Profesionales Locales</h1>
+            <p>Encuentra expertos de confianza en tu barrio de forma rápida y sencilla.</p>
+            <div class="search-container">
+                <input type="text" class="search-input" id="directorySearch"
+                    placeholder="¿Qué servicio buscas? (ej: electricista)">
+            </div>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section class="category-section">
+            <div class="category-grid">
+                <a href="#electricistas" class="category-card">
+                    <span class="category-icon">⚡</span>
+                    <h3>Electricistas</h3>
+                    <p>45 profesionales</p>
+                </a>
+                <a href="#fontaneros" class="category-card">
+                    <span class="category-icon">🚰</span>
+                    <h3>Fontaneros</h3>
+                    <p>38 profesionales</p>
+                </a>
+                <a href="#pintores" class="category-card">
+                    <span class="category-icon">🎨</span>
+                    <h3>Pintores</h3>
+                    <p>42 profesionales</p>
+                </a>
+                <a href="#aire-acondicionado" class="category-card">
+                    <span class="category-icon">❄️</span>
+                    <h3>Climatización</h3>
+                    <p>16 profesionales</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="business-list">
+            <div class="section-title">
+                <h2>Todos los Negocios</h2>
+                <p>Lista completa de profesionales verificados en Barcelona</p>
+            </div>
+
+            <div id="businessContainer">
+                
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpinteria de aluminio Jos-mar SL.</h3>
+                    <p>Carpintero aluminio en Barcelona</p>
+                </div>
+                <a href="sites/carpinteria-de-aluminio-jos-mar-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>ELECTRICISTA LEANDRO</h3>
+                    <p>Electricista en Barcelona</p>
+                </div>
+                <a href="sites/electricista-leandro/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>AMJ PINTORES BARCELONA</h3>
+                    <p>Pintor decorator en Barcelona</p>
+                </div>
+                <a href="sites/amj-pintores-barcelona/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Rehabilitación de Tejados Tapar en Barcelona</h3>
+                    <p>Limpieza fachadas en Barcelona</p>
+                </div>
+                <a href="sites/rehabilitación-de-tejados-tapar-en-barcelona/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Ikra Reformas e Interiorismo, S.L.</h3>
+                    <p>Reformas cocina en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/ikra-reformas-e-interiorismo-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpintería José Ferreiro</h3>
+                    <p>Carpintero aluminio en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/carpintería-josé-ferreiro/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Mi espacio int</h3>
+                    <p>Fontanero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/mi-espacio-int/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Fontanero,electricista,pintor, reformas, lampista</h3>
+                    <p>Fontanero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/fontaneroelectricistapintor-reformas-lampista/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Macris</h3>
+                    <p>Fontanero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/macris/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones Lamai</h3>
+                    <p>Electricista en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/instalaciones-lamai/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones DFG</h3>
+                    <p>Electricista en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/instalaciones-dfg/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Conductos de Aire Acondicionado los Gallegos S.L.</h3>
+                    <p>Aire acondicionado en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/conductos-de-aire-acondicionado-los-gallegos-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Solarnavy | Instalación de paneles solares</h3>
+                    <p>Instalador placas solares en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/solarnavy-instalación-de-paneles-solares/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>El Pintor del Barrio</h3>
+                    <p>Pintor decorator en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/el-pintor-del-barrio/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Agencia Font</h3>
+                    <p>Jardinero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/agencia-font/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cerrajero Alex L'Hospitalet de Llobregat</h3>
+                    <p>Cerrajero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/cerrajero-alex-lhospitalet-de-llobregat/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cerrajería Tecnillaves</h3>
+                    <p>Cerrajero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/cerrajería-tecnillaves/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Limpiezas Hospitalet de Llobregat - Empresa de limpieza</h3>
+                    <p>Limpieza fachadas en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/limpiezas-hospitalet-de-llobregat-empresa-de-limpieza/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpintería de aluminio y hierro ALUCLAVER</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/carpintería-de-aluminio-y-hierro-aluclaver/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpintería keysi’s alumini</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/carpintería-keysis-alumini/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>fontanero marroquí</h3>
+                    <p>Fontanero en Badalona</p>
+                </div>
+                <a href="sites/fontanero-marroquí/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>FONTANERO Y ELECTRICISTA MARC</h3>
+                    <p>Fontanero en Badalona</p>
+                </div>
+                <a href="sites/fontanero-y-electricista-marc/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>ELECTRICISTAS BADALONA</h3>
+                    <p>Electricista en Badalona</p>
+                </div>
+                <a href="sites/electricistas-badalona/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electricidad Urgente Bcn ✅⭐⭐⭐⭐⭐</h3>
+                    <p>Electricista en Badalona</p>
+                </div>
+                <a href="sites/electricidad-urgente-bcn/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cuadros Eléctricos e Instalaciones S.L.U.</h3>
+                    <p>Electricista en Badalona</p>
+                </div>
+                <a href="sites/cuadros-eléctricos-e-instalaciones-slu/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Barnainstal</h3>
+                    <p>Aire acondicionado en Badalona</p>
+                </div>
+                <a href="sites/barnainstal/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Helios Energy Europe Sl</h3>
+                    <p>Instalador placas solares en Badalona</p>
+                </div>
+                <a href="sites/helios-energy-europe-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pindeco</h3>
+                    <p>Pintor decorator en Badalona</p>
+                </div>
+                <a href="sites/pindeco/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Gestió Jardí Brugué</h3>
+                    <p>Jardinero en Badalona</p>
+                </div>
+                <a href="sites/gestió-jardí-brugué/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Marc Martí</h3>
+                    <p>Cerrajero en Badalona</p>
+                </div>
+                <a href="sites/marc-martí/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>LIMPIEZAS PLATA</h3>
+                    <p>Limpieza fachadas en Badalona</p>
+                </div>
+                <a href="sites/limpiezas-plata/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>EMPRESA DE RESTAURACION Y REHABILITACION DE FACHADAS</h3>
+                    <p>Limpieza fachadas en Badalona</p>
+                </div>
+                <a href="sites/empresa-de-restauracion-y-rehabilitacion-de-fachadas/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>nueva reforma sabadell REFORMA DE COCINA SABADELL REFORMA DE BAÑO SABADELL, LAMPISTA SABADELL</h3>
+                    <p>Reformas cocina en Sabadell</p>
+                </div>
+                <a href="sites/nueva-reforma-sabadell-reforma-de-cocina-sabadell-reforma-de-baño-sabadell-lampista-sabadell/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>MOSQUITERAS SABADELL</h3>
+                    <p>Carpintero aluminio en Sabadell</p>
+                </div>
+                <a href="sites/mosquiteras-sabadell/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones Vilchez: Electricista y fontanero</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/instalaciones-vilchez-electricista-y-fontanero/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>El Fontanero Juan</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/el-fontanero-juan/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jefferson Construcciónes</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/jefferson-construcciónes/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Algoma Instalaciones</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/algoma-instalaciones/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>electricidad NG EMERGENCIAS 24h,agua , gas , datos , industrial ,domiciliaria</h3>
+                    <p>Electricista en Sabadell</p>
+                </div>
+                <a href="sites/electricidad-ng-emergencias-24hagua-gas-datos-industrial-domiciliaria/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>El llauner del barri</h3>
+                    <p>Electricista en Sabadell</p>
+                </div>
+                <a href="sites/el-llauner-del-barri/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones Jorvid.</h3>
+                    <p>Electricista en Sabadell</p>
+                </div>
+                <a href="sites/instalaciones-jorvid/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Climatiza Innovación</h3>
+                    <p>Aire acondicionado en Sabadell</p>
+                </div>
+                <a href="sites/climatiza-innovación/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>AEROSOLAR RENOVABLES S.L.</h3>
+                    <p>Aire acondicionado en Sabadell</p>
+                </div>
+                <a href="sites/aerosolar-renovables-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>artyestuc pintors</h3>
+                    <p>Pintor decorator en Sabadell</p>
+                </div>
+                <a href="sites/artyestuc-pintors/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>SBD Revestiments</h3>
+                    <p>Pintor decorator en Sabadell</p>
+                </div>
+                <a href="sites/sbd-revestiments/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>La ceba jardins</h3>
+                    <p>Jardinero en Sabadell</p>
+                </div>
+                <a href="sites/la-ceba-jardins/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Roser 1988</h3>
+                    <p>Cerrajero en Sabadell</p>
+                </div>
+                <a href="sites/roser-1988/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>CerrajerosCalmet37</h3>
+                    <p>Cerrajero en Sabadell</p>
+                </div>
+                <a href="sites/cerrajeroscalmet37/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Idc Cocinas</h3>
+                    <p>Reformas cocina en Terrassa</p>
+                </div>
+                <a href="sites/idc-cocinas/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>moncuinesdisseny</h3>
+                    <p>Reformas cocina en Terrassa</p>
+                </div>
+                <a href="sites/moncuinesdisseny/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas Integrales J.Terret</h3>
+                    <p>Reformas baño en Terrassa</p>
+                </div>
+                <a href="sites/reformas-integrales-jterret/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Mapesi Terrassa Sl</h3>
+                    <p>Fontanero en Terrassa</p>
+                </div>
+                <a href="sites/mapesi-terrassa-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Joan Comallonga Galí</h3>
+                    <p>Fontanero en Terrassa</p>
+                </div>
+                <a href="sites/joan-comallonga-galí/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Ruiz</h3>
+                    <p>Fontanero en Terrassa</p>
+                </div>
+                <a href="sites/ruiz/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Antonio Alvarez Corral</h3>
+                    <p>Fontanero en Terrassa</p>
+                </div>
+                <a href="sites/antonio-alvarez-corral/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Mi instalador</h3>
+                    <p>Fontanero en Terrassa</p>
+                </div>
+                <a href="sites/mi-instalador/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Santiago Serrano García</h3>
+                    <p>Fontanero en Terrassa</p>
+                </div>
+                <a href="sites/santiago-serrano-garcía/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>instalacions García</h3>
+                    <p>Fontanero en Terrassa</p>
+                </div>
+                <a href="sites/instalacions-garcía/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Amperio Network Electricidad</h3>
+                    <p>Electricista en Terrassa</p>
+                </div>
+                <a href="sites/amperio-network-electricidad/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electricidad Quimi</h3>
+                    <p>Electricista en Terrassa</p>
+                </div>
+                <a href="sites/electricidad-quimi/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones Electricas Maldonado</h3>
+                    <p>Electricista en Terrassa</p>
+                </div>
+                <a href="sites/instalaciones-electricas-maldonado/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>APFCLIMA2023</h3>
+                    <p>Aire acondicionado en Terrassa</p>
+                </div>
+                <a href="sites/apfclima2023/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pintor Vizuete</h3>
+                    <p>Pintor decorator en Terrassa</p>
+                </div>
+                <a href="sites/pintor-vizuete/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pinturas y de decoración Mariano Cano</h3>
+                    <p>Pintor decorator en Terrassa</p>
+                </div>
+                <a href="sites/pinturas-y-de-decoración-mariano-cano/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Remuntdecor S.C.P.</h3>
+                    <p>Pintor decorator en Terrassa</p>
+                </div>
+                <a href="sites/remuntdecor-scp/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>seduction of the colors sl</h3>
+                    <p>Pintor decorator en Terrassa</p>
+                </div>
+                <a href="sites/seduction-of-the-colors-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pinturas & Reformas Bazoli</h3>
+                    <p>Pintor decorator en Terrassa</p>
+                </div>
+                <a href="sites/pinturas-reformas-bazoli/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jardinería Terrassa</h3>
+                    <p>Jardinero en Terrassa</p>
+                </div>
+                <a href="sites/jardinería-terrassa/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Simanya jardiners (Can Roca)</h3>
+                    <p>Jardinero en Terrassa</p>
+                </div>
+                <a href="sites/simanya-jardiners-can-roca/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Xavier Fontas</h3>
+                    <p>Jardinero en Terrassa</p>
+                </div>
+                <a href="sites/xavier-fontas/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>JaimeSerraller 24H/7D</h3>
+                    <p>Cerrajero en Terrassa</p>
+                </div>
+                <a href="sites/jaimeserraller-24h7d/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Puertas Alarmas Y Automatismo Turkamatic</h3>
+                    <p>Cerrajero en Terrassa</p>
+                </div>
+                <a href="sites/puertas-alarmas-y-automatismo-turkamatic/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformes D.M.</h3>
+                    <p>Reformas cocina en Mataró</p>
+                </div>
+                <a href="sites/reformes-dm/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>El Món De La Reforma</h3>
+                    <p>Reformas baño en Mataró</p>
+                </div>
+                <a href="sites/el-món-de-la-reforma/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Rafael Soler Ferrer</h3>
+                    <p>Reformas baño en Mataró</p>
+                </div>
+                <a href="sites/rafael-soler-ferrer/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Vidrios Y Aluminios E Martín</h3>
+                    <p>Carpintero aluminio en Mataró</p>
+                </div>
+                <a href="sites/vidrios-y-aluminios-e-martín/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Aluminis y Vidres DIAZ</h3>
+                    <p>Carpintero aluminio en Mataró</p>
+                </div>
+                <a href="sites/aluminis-y-vidres-diaz/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Empresa desatascos Mataró</h3>
+                    <p>Fontanero en Mataró</p>
+                </div>
+                <a href="sites/empresa-desatascos-mataró/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electricidad Y Telecomunicaciones Martínez</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/electricidad-y-telecomunicaciones-martínez/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electronova Instal·lacions</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/electronova-installacions/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>ELECTRO SERVEI</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/electro-servei/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Unión Electrónica</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/unión-electrónica/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Euro Light Group Serveis</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/euro-light-group-serveis/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones Martínez Fernández S.L.</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/instalaciones-martínez-fernández-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones J.L. Chicote e Hijos, Sl</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/instalaciones-jl-chicote-e-hijos-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>David Castro López</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/david-castro-lópez/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Iniciativas Comerciales Eléctricas Sa</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/iniciativas-comerciales-eléctricas-sa/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pintores Mito</h3>
+                    <p>Pintor decorator en Mataró</p>
+                </div>
+                <a href="sites/pintores-mito/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Llibre Pintors</h3>
+                    <p>Pintor decorator en Mataró</p>
+                </div>
+                <a href="sites/llibre-pintors/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pinturas Maresme</h3>
+                    <p>Pintor decorator en Mataró</p>
+                </div>
+                <a href="sites/pinturas-maresme/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pintors Garriga | Maresme</h3>
+                    <p>Pintor decorator en Mataró</p>
+                </div>
+                <a href="sites/pintors-garriga-maresme/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pint-Decor</h3>
+                    <p>Pintor decorator en Mataró</p>
+                </div>
+                <a href="sites/pint-decor/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>A one Locks Solutions</h3>
+                    <p>Cerrajero en Mataró</p>
+                </div>
+                <a href="sites/a-one-locks-solutions/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>SERVINET MARESME - SERVICIOS DE LIMPIEZA</h3>
+                    <p>Limpieza fachadas en Mataró</p>
+                </div>
+                <a href="sites/servinet-maresme-servicios-de-limpieza/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones G Manga</h3>
+                    <p>Fontanero en Granollers</p>
+                </div>
+                <a href="sites/instalaciones-g-manga/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Asociación de Intaladores de Electricidad, Fontanería, Gas y Afines del Valle Oriental</h3>
+                    <p>Fontanero en Granollers</p>
+                </div>
+                <a href="sites/asociación-de-intaladores-de-electricidad-fontanería-gas-y-afines-del-valle-oriental/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciónes Empire Ros@ Servicios</h3>
+                    <p>Electricista en Granollers</p>
+                </div>
+                <a href="sites/instalaciónes-empire-ros-servicios/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Grup Eurovalles Electric</h3>
+                    <p>Electricista en Granollers</p>
+                </div>
+                <a href="sites/grup-eurovalles-electric/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>PINTOR GRANOLLERS CENTRE</h3>
+                    <p>Pintor decorator en Granollers</p>
+                </div>
+                <a href="sites/pintor-granollers-centre/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jardí paradís</h3>
+                    <p>Jardinero en Granollers</p>
+                </div>
+                <a href="sites/jardí-paradís/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Joaquín Puigdomenech Sarabia</h3>
+                    <p>Jardinero en Granollers</p>
+                </div>
+                <a href="sites/joaquín-puigdomenech-sarabia/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Floristería Pètals Granollers</h3>
+                    <p>Jardinero en Granollers</p>
+                </div>
+                <a href="sites/floristería-pètals-granollers/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cerrajero Luis 24 Horas</h3>
+                    <p>Cerrajero en Granollers</p>
+                </div>
+                <a href="sites/cerrajero-luis-24-horas/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>cerrajeros nou barris jordy</h3>
+                    <p>Cerrajero en Granollers</p>
+                </div>
+                <a href="sites/cerrajeros-nou-barris-jordy/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Limpiezas Granollers - Empresa de Limpieza en Granollers</h3>
+                    <p>Limpieza fachadas en Granollers</p>
+                </div>
+                <a href="sites/limpiezas-granollers-empresa-de-limpieza-en-granollers/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas Vangi</h3>
+                    <p>Reformas baño en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/reformas-vangi/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Talleres Nogués Montajes Electrónicos</h3>
+                    <p>Electricista en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/talleres-nogués-montajes-electrónicos/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>MD Electric</h3>
+                    <p>Electricista en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/md-electric/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>S.M Pinturas revestimiento y mas</h3>
+                    <p>Pintor decorator en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/sm-pinturas-revestimiento-y-mas/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jardinería Magnólia</h3>
+                    <p>Jardinero en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/jardinería-magnólia/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>tucerrajeroSantCugat</h3>
+                    <p>Cerrajero en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/tucerrajerosantcugat/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cerrajería Dámaso Álvarez</h3>
+                    <p>Cerrajero en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/cerrajería-dámaso-álvarez/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Alumidina carpintería de aluminio y pvc</h3>
+                    <p>Carpintero aluminio en Barcelona</p>
+                </div>
+                <a href="sites/alumidina-carpintería-de-aluminio-y-pvc/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electricista Pompeya 24h</h3>
+                    <p>Electricista en Barcelona</p>
+                </div>
+                <a href="sites/electricista-pompeya-24h/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Lampistería María K, Lampista</h3>
+                    <p>Electricista en Barcelona</p>
+                </div>
+                <a href="sites/lampistería-maría-k-lampista/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>RM CLIMATIZACIÓN AEROTERMIA Y REFRIGERACIÓN</h3>
+                    <p>Aire acondicionado en Barcelona</p>
+                </div>
+                <a href="sites/rm-climatización-aerotermia-y-refrigeración/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>LUCIN COCINAS - REFORMA DE INTERIORES.</h3>
+                    <p>Reformas cocina en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/lucin-cocinas-reforma-de-interiores/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas AJ MENA</h3>
+                    <p>Reformas cocina en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/reformas-aj-mena/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>El Manetes Del Centre</h3>
+                    <p>Electricista en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/el-manetes-del-centre/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Fontanero</h3>
+                    <p>Fontanero en Badalona</p>
+                </div>
+                <a href="sites/fontanero/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>21 grados</h3>
+                    <p>Aire acondicionado en Badalona</p>
+                </div>
+                <a href="sites/21-grados/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jardinería Concepció</h3>
+                    <p>Jardinero en Badalona</p>
+                </div>
+                <a href="sites/jardinería-concepció/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpintería de aluminio ANGA - (Antonio García)</h3>
+                    <p>Carpintero aluminio en Sabadell</p>
+                </div>
+                <a href="sites/carpintería-de-aluminio-anga-antonio-garcía/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Josal Confort S.L.</h3>
+                    <p>Fontanero en Terrassa</p>
+                </div>
+                <a href="sites/josal-confort-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Guglie Pintores</h3>
+                    <p>Pintor decorator en Terrassa</p>
+                </div>
+                <a href="sites/guglie-pintores/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Fontanero y Electricista 24H</h3>
+                    <p>Fontanero en Granollers</p>
+                </div>
+                <a href="sites/fontanero-y-electricista-24h/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jardi art Sant Cugat</h3>
+                    <p>Jardinero en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/jardi-art-sant-cugat/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalador de aires acondicionados FS instal·lacions</h3>
+                    <p>Aire acondicionado en Barcelona</p>
+                </div>
+                <a href="sites/instalador-de-aires-acondicionados-fs-installacions/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpinteria de Alumino J.Julve S.L.</h3>
+                    <p>Carpintero aluminio en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/carpinteria-de-alumino-jjulve-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpintería de Aluminio Miguel Angel Calso</h3>
+                    <p>Carpintero aluminio en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/carpintería-de-aluminio-miguel-angel-calso/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>G&G Reformas</h3>
+                    <p>Reformas cocina en Badalona</p>
+                </div>
+                <a href="sites/gg-reformas/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Aluminios Y metales Realce S.L.U</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/aluminios-y-metales-realce-slu/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>PINTOR EXPRESS</h3>
+                    <p>Pintor decorator en Badalona</p>
+                </div>
+                <a href="sites/pintor-express/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Limpiezas Neteco</h3>
+                    <p>Limpieza fachadas en Badalona</p>
+                </div>
+                <a href="sites/limpiezas-neteco/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciónes y Reparaciones Batllevell, S.L .</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/instalaciónes-y-reparaciones-batllevell-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>PINTORTINOS</h3>
+                    <p>Pintor decorator en Sabadell</p>
+                </div>
+                <a href="sites/pintortinos/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cerrajeros Luis Aperturas</h3>
+                    <p>Cerrajero en Sabadell</p>
+                </div>
+                <a href="sites/cerrajeros-luis-aperturas/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Rebonito Decoracion</h3>
+                    <p>Pintor decorator en Terrassa</p>
+                </div>
+                <a href="sites/rebonito-decoracion/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Raco Cerrajeros Terrassa</h3>
+                    <p>Cerrajero en Terrassa</p>
+                </div>
+                <a href="sites/raco-cerrajeros-terrassa/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Lampista( Felix Galeano y Ramon Linares )</h3>
+                    <p>Fontanero en Mataró</p>
+                </div>
+                <a href="sites/lampista-felix-galeano-y-ramon-linares/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Aluminios Ancar</h3>
+                    <p>Carpintero aluminio en Granollers</p>
+                </div>
+                <a href="sites/aluminios-ancar/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Intergas 2015 S.L - Reparación, instalación y mantenimiento calderas y aparatos de aire acondicionado</h3>
+                    <p>Aire acondicionado en Granollers</p>
+                </div>
+                <a href="sites/intergas-2015-sl-reparación-instalación-y-mantenimiento-calderas-y-aparatos-de-aire-acondicionado/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Ecoalum Carpintería Sostenible</h3>
+                    <p>Carpintero aluminio en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/ecoalum-carpintería-sostenible/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Del&San</h3>
+                    <p>Limpieza fachadas en Barcelona</p>
+                </div>
+                <a href="sites/delsan/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformes TOT I MÉS</h3>
+                    <p>Reformas cocina en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/reformes-tot-i-més/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Fontanero en bellvitge</h3>
+                    <p>Fontanero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/fontanero-en-bellvitge/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>ContraHUMITAT</h3>
+                    <p>Tratamiento humedades en Sabadell</p>
+                </div>
+                <a href="sites/contrahumitat/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>R.Manaut</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/rmanaut/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Hidrofonts Tècnics de l'Aigua S.L.</h3>
+                    <p>Fontanero en Mataró</p>
+                </div>
+                <a href="sites/hidrofonts-tècnics-de-laigua-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Basicgarden</h3>
+                    <p>Jardinero en Barcelona</p>
+                </div>
+                <a href="sites/basicgarden/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Codina</h3>
+                    <p>Reformas baño en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/codina/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas Loaiza</h3>
+                    <p>Reformas integrales en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/reformas-loaiza/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpintería de Aluminio Hnos. Paredes</h3>
+                    <p>Carpintero aluminio en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/carpintería-de-aluminio-hnos-paredes/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pintures i Deco L Hospitalet. Tienda de pinturas y decoración.</h3>
+                    <p>Pintor decorator en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/pintures-i-deco-l-hospitalet-tienda-de-pinturas-y-decoración/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Floristeria Grow Carmen</h3>
+                    <p>Jardinero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/floristeria-grow-carmen/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>mcnet servicios de limpieza integrales</h3>
+                    <p>Limpieza fachadas en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/mcnet-servicios-de-limpieza-integrales/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>On Interiorisme, cuines i banys, SL</h3>
+                    <p>Reformas cocina en Badalona</p>
+                </div>
+                <a href="sites/on-interiorisme-cuines-i-banys-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpinteria De Aluminio Cristaleria TJ</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/carpinteria-de-aluminio-cristaleria-tj/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Barnatecnic</h3>
+                    <p>Aire acondicionado en Badalona</p>
+                </div>
+                <a href="sites/barnatecnic/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Little Garden Solutions Grow Shop</h3>
+                    <p>Jardinero en Badalona</p>
+                </div>
+                <a href="sites/little-garden-solutions-grow-shop/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Neteges Cabassa</h3>
+                    <p>Limpieza fachadas en Terrassa</p>
+                </div>
+                <a href="sites/neteges-cabassa/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pinturas y reformas tudela</h3>
+                    <p>Pintor decorator en Mataró</p>
+                </div>
+                <a href="sites/pinturas-y-reformas-tudela/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>ALUMINIOS MIGUEL, S.L</h3>
+                    <p>Carpintero aluminio en Granollers</p>
+                </div>
+                <a href="sites/aluminios-miguel-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Fontanería Pompeya 24h.</h3>
+                    <p>Fontanero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/fontanería-pompeya-24h/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpintería Metálica Imi</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/carpintería-metálica-imi/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Conrado Bañón Montajes Eléctricos</h3>
+                    <p>Electricista en Sabadell</p>
+                </div>
+                <a href="sites/conrado-bañón-montajes-eléctricos/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reforma2</h3>
+                    <p>Reformas integrales en Mataró</p>
+                </div>
+                <a href="sites/reforma2/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electricidad</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/electricidad/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Serralleria Montpart</h3>
+                    <p>Cerrajero en Granollers</p>
+                </div>
+                <a href="sites/serralleria-montpart/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Construccion y reformas Integrales</h3>
+                    <p>Reformas integrales en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/construccion-y-reformas-integrales/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpintero Ebanista Salvador Navarra Sant Cugat del Vallés</h3>
+                    <p>Carpintero aluminio en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/carpintero-ebanista-salvador-navarra-sant-cugat-del-vallés/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Peñas Martínez Joaquín</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/peñas-martínez-joaquín/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones T. Osuna</h3>
+                    <p>Aire acondicionado en Sabadell</p>
+                </div>
+                <a href="sites/instalaciones-t-osuna/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jardí Pond</h3>
+                    <p>Jardinero en Terrassa</p>
+                </div>
+                <a href="sites/jardí-pond/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Rekalum Carpinteria D' Alumini</h3>
+                    <p>Carpintero aluminio en Mataró</p>
+                </div>
+                <a href="sites/rekalum-carpinteria-d-alumini/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pavid Net S L</h3>
+                    <p>Limpieza fachadas en Mataró</p>
+                </div>
+                <a href="sites/pavid-net-s-l/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>CAL SABATER</h3>
+                    <p>Cerrajero en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/cal-sabater/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas J y P</h3>
+                    <p>Reformas baño en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/reformas-j-y-p/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Limpiezas Badalona - Empresa de limpieza en Badalona</h3>
+                    <p>Limpieza fachadas en Badalona</p>
+                </div>
+                <a href="sites/limpiezas-badalona-empresa-de-limpieza-en-badalona/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>DUTXA PLAT SABADELL</h3>
+                    <p>Reformas baño en Sabadell</p>
+                </div>
+                <a href="sites/dutxa-plat-sabadell/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Francesc Torras Durán</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/francesc-torras-durán/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electricidad Jaime Lorenzo</h3>
+                    <p>Electricista en Terrassa</p>
+                </div>
+                <a href="sites/electricidad-jaime-lorenzo/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Checapintures Terrassa</h3>
+                    <p>Pintor decorator en Terrassa</p>
+                </div>
+                <a href="sites/checapintures-terrassa/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Centro de Jardinería i Floristeria Argemí</h3>
+                    <p>Jardinero en Terrassa</p>
+                </div>
+                <a href="sites/centro-de-jardinería-i-floristeria-argemí/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instal·lacions Ismax s.l.</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/installacions-ismax-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Dimi Reformes - Vallès Occidental</h3>
+                    <p>Jardinero en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/dimi-reformes-vallès-occidental/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>BADAMETAL</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/badametal/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Universal Assistance</h3>
+                    <p>Fontanero en Badalona</p>
+                </div>
+                <a href="sites/universal-assistance/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Styl Cuines</h3>
+                    <p>Reformas cocina en Sabadell</p>
+                </div>
+                <a href="sites/styl-cuines/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>La Llar de Les Claus</h3>
+                    <p>Cerrajero en Terrassa</p>
+                </div>
+                <a href="sites/la-llar-de-les-claus/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cristalería Castillo Carpintería de Aluminio</h3>
+                    <p>Carpintero aluminio en Mataró</p>
+                </div>
+                <a href="sites/cristalería-castillo-carpintería-de-aluminio/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Centre Jardineria Masó-Navarro</h3>
+                    <p>Jardinero en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/centre-jardineria-masó-navarro/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jarclos</h3>
+                    <p>Jardinero en Barcelona</p>
+                </div>
+                <a href="sites/jarclos/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>San Josep Banys I Cuines</h3>
+                    <p>Reformas cocina en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/san-josep-banys-i-cuines/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpintería Aluminio Parras</h3>
+                    <p>Carpintero aluminio en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/carpintería-aluminio-parras/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jardiners Sant Adrià S.C.C.L.</h3>
+                    <p>Jardinero en Badalona</p>
+                </div>
+                <a href="sites/jardiners-sant-adrià-sccl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jaiser Rehabilitación de Fachadas - Alquiler y Montaje de Andamios</h3>
+                    <p>Tratamiento humedades en Terrassa</p>
+                </div>
+                <a href="sites/jaiser-rehabilitación-de-fachadas-alquiler-y-montaje-de-andamios/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Garden 4 Vents</h3>
+                    <p>Jardinero en Terrassa</p>
+                </div>
+                <a href="sites/garden-4-vents/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Tancal Carpintería de Aluminio</h3>
+                    <p>Carpintero aluminio en Granollers</p>
+                </div>
+                <a href="sites/tancal-carpintería-de-aluminio/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Aluminios Guerrero BCN</h3>
+                    <p>Carpintero aluminio en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/aluminios-guerrero-bcn/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Ensalum</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/ensalum/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electofluids Solar Sl</h3>
+                    <p>Instalador placas solares en Badalona</p>
+                </div>
+                <a href="sites/electofluids-solar-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>REFORMAS HOSPITALET</h3>
+                    <p>Reformas cocina en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/reformas-hospitalet/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Carpinteria de aluminio Aluvizu Decor</h3>
+                    <p>Carpintero aluminio en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/carpinteria-de-aluminio-aluvizu-decor/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Floristeria Jardinet</h3>
+                    <p>Jardinero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/floristeria-jardinet/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>totdecor tot cuina, s.l</h3>
+                    <p>Reformas cocina en Badalona</p>
+                </div>
+                <a href="sites/totdecor-tot-cuina-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>InfinitySun S.L.</h3>
+                    <p>Instalador placas solares en Terrassa</p>
+                </div>
+                <a href="sites/infinitysun-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Alfonso Montilla Corral</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/alfonso-montilla-corral/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pintor Hugo</h3>
+                    <p>Pintor decorator en Terrassa</p>
+                </div>
+                <a href="sites/pintor-hugo/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Selsa Mataro</h3>
+                    <p>Limpieza fachadas en Mataró</p>
+                </div>
+                <a href="sites/selsa-mataro/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>RYCASA REGULADORES Y CONST</h3>
+                    <p>Jardinero en Terrassa</p>
+                </div>
+                <a href="sites/rycasa-reguladores-y-const/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Serralleria Aranda Luis</h3>
+                    <p>Cerrajero en Terrassa</p>
+                </div>
+                <a href="sites/serralleria-aranda-luis/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Vives P. Benavent</h3>
+                    <p>Jardinero en Mataró</p>
+                </div>
+                <a href="sites/vives-p-benavent/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>MONTAJE CMG 2022 S.L</h3>
+                    <p>Carpintero aluminio en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/montaje-cmg-2022-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Mes Net S.L</h3>
+                    <p>Limpieza fachadas en Terrassa</p>
+                </div>
+                <a href="sites/mes-net-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Girbau Ace by Nimnar</h3>
+                    <p>Aire acondicionado en Granollers</p>
+                </div>
+                <a href="sites/girbau-ace-by-nimnar/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Tecnova Rehabilitació S.L</h3>
+                    <p>Tratamiento humedades en Terrassa</p>
+                </div>
+                <a href="sites/tecnova-rehabilitació-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instalaciones Llestanos S L</h3>
+                    <p>Fontanero en Granollers</p>
+                </div>
+                <a href="sites/instalaciones-llestanos-s-l/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Moder Alum</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/moder-alum/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas Integrales Badalona Mario</h3>
+                    <p>Reformas integrales en Badalona</p>
+                </div>
+                <a href="sites/reformas-integrales-badalona-mario/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Juan Francisco Soriano Martínez</h3>
+                    <p>Carpintero aluminio en Badalona</p>
+                </div>
+                <a href="sites/juan-francisco-soriano-martínez/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instal·lacions M.P.</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/installacions-mp/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instal.lacions Xavi Martí</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/installacions-xavi-martí/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electricista económico 24 Horas Terrassa</h3>
+                    <p>Electricista en Terrassa</p>
+                </div>
+                <a href="sites/electricista-económico-24-horas-terrassa/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instal·lacions Hidalgo Ruiz</h3>
+                    <p>Electricista en Mataró</p>
+                </div>
+                <a href="sites/installacions-hidalgo-ruiz/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electric2</h3>
+                    <p>Electricista en Granollers</p>
+                </div>
+                <a href="sites/electric2/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Francisco Claudio Díaz Segura</h3>
+                    <p>Fontanero en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/francisco-claudio-díaz-segura/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>CLICON S.C.C.L.</h3>
+                    <p>Aire acondicionado en Sabadell</p>
+                </div>
+                <a href="sites/clicon-sccl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas Barcelona</h3>
+                    <p>Reformas cocina en Terrassa</p>
+                </div>
+                <a href="sites/reformas-barcelona/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>CARPINTERIA DE ALUMINIO ALUXLINEA S.L.</h3>
+                    <p>Carpintero aluminio en Barcelona</p>
+                </div>
+                <a href="sites/carpinteria-de-aluminio-aluxlinea-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jardinero Eixample Barcelona</h3>
+                    <p>Jardinero en Barcelona</p>
+                </div>
+                <a href="sites/jardinero-eixample-barcelona/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas.integral</h3>
+                    <p>Reformas integrales en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/reformasintegral/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>O P Instal Sl | Electricista Hospitalet de Llobregat</h3>
+                    <p>Electricista en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/o-p-instal-sl-electricista-hospitalet-de-llobregat/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pintores La remunta</h3>
+                    <p>Pintor decorator en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/pintores-la-remunta/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>PINTOR MORA SL</h3>
+                    <p>Pintor decorator en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/pintor-mora-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pintores Sant Josep</h3>
+                    <p>Pintor decorator en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/pintores-sant-josep/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Decoart</h3>
+                    <p>Pintor decorator en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/decoart/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Wally Pinturas</h3>
+                    <p>Pintor decorator en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/wally-pinturas/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Florworld Garden Services S L</h3>
+                    <p>Jardinero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/florworld-garden-services-s-l/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>novanatura.jardineria</h3>
+                    <p>Jardinero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/novanaturajardineria/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cañamas Jardins</h3>
+                    <p>Jardinero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/cañamas-jardins/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jose Antonio Martinez López</h3>
+                    <p>Jardinero en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/jose-antonio-martinez-lópez/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>FACHADAS Y BAJANTES S.L</h3>
+                    <p>Limpieza fachadas en L'Hospitalet de Llobregat</p>
+                </div>
+                <a href="sites/fachadas-y-bajantes-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Fernando Herrera Hidalgo</h3>
+                    <p>Pintor decorator en Badalona</p>
+                </div>
+                <a href="sites/fernando-herrera-hidalgo/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Abid Aslam</h3>
+                    <p>Pintor decorator en Badalona</p>
+                </div>
+                <a href="sites/abid-aslam/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>lbdeco es</h3>
+                    <p>Pintor decorator en Badalona</p>
+                </div>
+                <a href="sites/lbdeco-es/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>ElTeuManyaBadalona</h3>
+                    <p>Cerrajero en Badalona</p>
+                </div>
+                <a href="sites/elteumanyabadalona/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Averias 24 Horas</h3>
+                    <p>Fontanero en Sabadell</p>
+                </div>
+                <a href="sites/averias-24-horas/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>PINTADECOR. Sbd</h3>
+                    <p>Pintor decorator en Sabadell</p>
+                </div>
+                <a href="sites/pintadecor-sbd/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>J.Lãzaro Aplicació Decorativa I Pintura</h3>
+                    <p>Pintor decorator en Sabadell</p>
+                </div>
+                <a href="sites/jlãzaro-aplicació-decorativa-i-pintura/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Joaquín Garrido Algaba</h3>
+                    <p>Pintor decorator en Sabadell</p>
+                </div>
+                <a href="sites/joaquín-garrido-algaba/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformes Terrassa</h3>
+                    <p>Reformas integrales en Terrassa</p>
+                </div>
+                <a href="sites/reformes-terrassa/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas Integrales</h3>
+                    <p>Reformas integrales en Terrassa</p>
+                </div>
+                <a href="sites/reformas-integrales/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electricistas terrassa</h3>
+                    <p>Electricista en Terrassa</p>
+                </div>
+                <a href="sites/electricistas-terrassa/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Electricistas Terrassa - Electricidad TerraElectra</h3>
+                    <p>Electricista en Terrassa</p>
+                </div>
+                <a href="sites/electricistas-terrassa-electricidad-terraelectra/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas integrales ArtService</h3>
+                    <p>Reformas integrales en Mataró</p>
+                </div>
+                <a href="sites/reformas-integrales-artservice/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Desatascos Mataró ERM</h3>
+                    <p>Fontanero en Mataró</p>
+                </div>
+                <a href="sites/desatascos-mataró-erm/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instaladores de Climatización</h3>
+                    <p>Aire acondicionado en Mataró</p>
+                </div>
+                <a href="sites/instaladores-de-climatización/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>J R PINTORS</h3>
+                    <p>Pintor decorator en Mataró</p>
+                </div>
+                <a href="sites/j-r-pintors/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Eduard Sanchez Espin</h3>
+                    <p>Pintor decorator en Mataró</p>
+                </div>
+                <a href="sites/eduard-sanchez-espin/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pintura y Decoración IMRAN</h3>
+                    <p>Pintor decorator en Mataró</p>
+                </div>
+                <a href="sites/pintura-y-decoración-imran/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Fcc Medio Ambiente Jardins Mataró</h3>
+                    <p>Jardinero en Mataró</p>
+                </div>
+                <a href="sites/fcc-medio-ambiente-jardins-mataró/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jardinería Joan Cuquet</h3>
+                    <p>Jardinero en Mataró</p>
+                </div>
+                <a href="sites/jardinería-joan-cuquet/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Monjardin.multiservice</h3>
+                    <p>Jardinero en Mataró</p>
+                </div>
+                <a href="sites/monjardinmultiservice/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Serraller Mataró 1980</h3>
+                    <p>Cerrajero en Mataró</p>
+                </div>
+                <a href="sites/serraller-mataró-1980/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Ballús S.c.p.</h3>
+                    <p>Carpintero aluminio en Granollers</p>
+                </div>
+                <a href="sites/ballús-scp/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Agustín Rodríguez Lorite</h3>
+                    <p>Fontanero en Granollers</p>
+                </div>
+                <a href="sites/agustín-rodríguez-lorite/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>OBRAS Y SERVICIOS NEMO ELECTRICISTA S. L</h3>
+                    <p>Electricista en Granollers</p>
+                </div>
+                <a href="sites/obras-y-servicios-nemo-electricista-s-l/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>La Botiga Del Clima</h3>
+                    <p>Aire acondicionado en Granollers</p>
+                </div>
+                <a href="sites/la-botiga-del-clima/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Pintura i Decoració Ramón</h3>
+                    <p>Pintor decorator en Granollers</p>
+                </div>
+                <a href="sites/pintura-i-decoració-ramón/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jose Barrios Pintor fino, limpio y responsable</h3>
+                    <p>Pintor decorator en Granollers</p>
+                </div>
+                <a href="sites/jose-barrios-pintor-fino-limpio-y-responsable/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Josep Maria Cabané</h3>
+                    <p>Pintor decorator en Granollers</p>
+                </div>
+                <a href="sites/josep-maria-cabané/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jorge Busamia, Sl</h3>
+                    <p>Jardinero en Granollers</p>
+                </div>
+                <a href="sites/jorge-busamia-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cerrajero Moises Granollers</h3>
+                    <p>Cerrajero en Granollers</p>
+                </div>
+                <a href="sites/cerrajero-moises-granollers/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>el teu serraller alfred</h3>
+                    <p>Cerrajero en Granollers</p>
+                </div>
+                <a href="sites/el-teu-serraller-alfred/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Serraller Soriano 1987</h3>
+                    <p>Cerrajero en Granollers</p>
+                </div>
+                <a href="sites/serraller-soriano-1987/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Novavida Reformas Integrales Sant Cugat</h3>
+                    <p>Reformas integrales en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/novavida-reformas-integrales-sant-cugat/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>REFORMAS INTEGRALES 24H S.L</h3>
+                    <p>Reformas integrales en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/reformas-integrales-24h-sl/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>SZ Reformas Integrales</h3>
+                    <p>Reformas integrales en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/sz-reformas-integrales/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Reformas al Cuadrado</h3>
+                    <p>Reformas integrales en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/reformas-al-cuadrado/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Aroaluminis Tot En Alumini</h3>
+                    <p>Carpintero aluminio en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/aroaluminis-tot-en-alumini/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Jvc Profesional Europa Limited Sucursal En España</h3>
+                    <p>Electricista en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/jvc-profesional-europa-limited-sucursal-en-españa/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Tecnoelectric</h3>
+                    <p>Electricista en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/tecnoelectric/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>3P Elèctric</h3>
+                    <p>Electricista en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/3p-elèctric/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Integral de Ingeniería e Instalaciones S L</h3>
+                    <p>Electricista en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/integral-de-ingeniería-e-instalaciones-s-l/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Neix Instalnova 25</h3>
+                    <p>Electricista en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/neix-instalnova-25/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Cofely España S A U</h3>
+                    <p>Electricista en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/cofely-españa-s-a-u/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Calderas y Aire Acondicionado Sant Cugat 659319761</h3>
+                    <p>Aire acondicionado en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/calderas-y-aire-acondicionado-sant-cugat-659319761/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>Instaladores Placas Solares</h3>
+                    <p>Instalador placas solares en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/instaladores-placas-solares/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            <div class="business-card">
+                <div class="biz-info">
+                    <h3>SerrallerAndreus</h3>
+                    <p>Cerrajero en Sant Cugat del Vallès</p>
+                </div>
+                <a href="sites/serrallerandreus/index.html" class="view-link">Ver Web</a>
+            </div>
+            
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 60px 20px; color: var(--secondary);">
+        <p>&copy; 2026 LocalWeb Directory Hub. Servicios Premium para Negocios Locales.</p>
+    </footer>
+
+    <script>
+        document.getElementById('directorySearch').addEventListener('input', function (e) {
+            const term = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.business-card');
+
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                card.style.display = text.includes(term) ? 'flex' : 'none';
+            });
+        });
+    </script>
+
 </body>
+
 </html>
-    

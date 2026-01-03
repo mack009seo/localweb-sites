@@ -21,27 +21,15 @@
 
     <style>
         :root {
-            --primary: {
-                    {
-                    PRIMARY_COLOR
-                }
-            }
+            --primary: hsl(220, 70%, 45%)
 
             ;
 
-            --primary-hover: {
-                    {
-                    PRIMARY_HOVER_COLOR
-                }
-            }
+            --primary-hover: hsl(220, 70%, 35%)
 
             ;
 
-            --accent: {
-                    {
-                    ACCENT_COLOR
-                }
-            }
+            --accent: hsl(40, 70%, 50%)
 
             ;
         }
@@ -51,12 +39,12 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "GardenStore",
       "name": "Fcc Medio Ambiente Jardins Mataró",
       "image": "https://fcc-medio-ambiente-jardins-mataró.com/assets/images/hero.jpg",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Carrer Pacheco, 90, 08301 Mataró, Barcelona, España",
+        "streetAddress": "Carrer Pacheco, 90, 08301 Mataró, Barcelona",
         "addressLocality": "Mataró",
         "addressRegion": "Mataró",
         "postalCode": "",
@@ -84,6 +72,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#services">Servicios</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#location">Ubicación</a></li>
             </ul>
             <div class="header-cta">
@@ -167,6 +156,37 @@
             </div>
         </section>
 
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Consejos y Actualidades</h2>
+                    <p>Artículos exclusivos sobre Jardinero para mejorar tu hogar.</p>
+                </div>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    
+            <div class="card" style="display: flex; flex-direction: column;">
+                <h3 style="margin-bottom: 10px;">Cómo Elegir al Mejor Profesional para tu Reforma</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Te damos las claves para contratar con total seguridad y evitar sorpresas desagradables en tu proyecto.</p>
+                <a href="blog/post-1.html" class="btn btn-demo" style="margin-top: auto; padding: 8px;">Leer más</a>
+            </div>
+            
+            <div class="card" style="display: flex; flex-direction: column;">
+                <h3 style="margin-bottom: 10px;">Pequeños Cambios que Aumentan el Valor de tu Vivienda</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Descubre cómo inversiones mínimas pueden revalorizar tu casa de cara a una futura venta o alquiler.</p>
+                <a href="blog/post-2.html" class="btn btn-demo" style="margin-top: auto; padding: 8px;">Leer más</a>
+            </div>
+            
+            <div class="card" style="display: flex; flex-direction: column;">
+                <h3 style="margin-bottom: 10px;">Mantenimiento del Hogar: Guía por Estaciones</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Un calendario sencillo para que tu casa esté siempre en perfecto estado durante todo el año.</p>
+                <a href="blog/post-3.html" class="btn btn-demo" style="margin-top: auto; padding: 8px;">Leer más</a>
+            </div>
+            
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- FAQ Section -->
@@ -199,16 +219,15 @@
     <section id="location" class="map-section">
         <div class="section-title">
             <h2>¿Dónde estamos?</h2>
-            <p style="font-size: 1.25rem; font-weight: 600; color: var(--primary);">📍 Carrer Pacheco, 90, 08301 Mataró, Barcelona, España</p>
+            <p style="font-size: 1.25rem; font-weight: 600; color: var(--primary);">📍 Carrer Pacheco, 90, 08301 Mataró, Barcelona</p>
         </div>
         <div class="map-container">
             <iframe width="100%" height="450" frameborder="0"
-                style="border:0; border-radius: var(--radius); box-shadow: var(--shadow);" src="https://maps.google.com/maps?q=Fcc+Medio+Ambiente+Jardins+Mataró+Carrer+Pacheco,+90,+08301+Mataró,+Barcelona,+España+Mataró&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                style="border:0; border-radius: var(--radius); box-shadow: var(--shadow);" src="https://maps.google.com/maps?q=Fcc+Medio+Ambiente+Jardins+Mataró+Carrer+Pacheco,+90,+08301+Mataró,+Barcelona+Mataró&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 allowfullscreen loading="lazy">
             </iframe>
         </div>
     </section>
-    </main>
 
     <footer>
         <div class="footer-content"
