@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://localpro.top/[[BUSINESS_NAME_SLUG]]/sitemap.xml
+Sitemap: https://localpro.top/calderas-y-aire-acondicionado-sant-cugat-659319761/sitemap.xml

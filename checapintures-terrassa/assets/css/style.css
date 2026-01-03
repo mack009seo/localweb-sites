@@ -137,7 +137,8 @@ nav {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    padding: 8rem 2rem 4rem;
+    padding: 10rem 2rem 6rem;
+    max-width: none;
     background: radial-gradient(circle at top right, rgba(129, 140, 248, 0.1), transparent),
         radial-gradient(circle at bottom left, rgba(244, 63, 94, 0.1), transparent);
     display: flex;
@@ -150,7 +151,47 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: flex-start;
+    /* Prevent cards from centering vertically and overlapping previous sections */
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.about-text p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.about-card {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 2.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.about-card h3 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-shadow: none;
+}
+
+.check-list {
+    list-style: none;
+}
+
+.check-list li {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
 }
 
 .cta-group {
@@ -177,7 +218,7 @@ nav {
 }
 
 .map-section {
-    padding: 3rem 2rem 5rem;
+    padding: 6rem 2rem;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -308,16 +349,47 @@ nav {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
 }
 
+/* Standard Section Spacing */
+section {
+    padding: 100px 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-surface {
+    background-color: rgba(255, 255, 255, 0.03);
+    max-width: none;
+    /* Full width background */
+}
+
+.bg-surface>div,
+.bg-surface-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* Services */
 .section-title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .section-title h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--white);
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.section-title p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+#location .section-title p {
+    color: var(--primary);
     font-weight: 700;
 }
 
@@ -537,10 +609,11 @@ footer {
     background: var(--bg-secondary);
 }
 
-.faq-container {
-    max-width: 900px;
+.faq-container-grid {
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    display: grid;
+    gap: 1.5rem;
 }
 
 .faq-grid {

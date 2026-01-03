@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://localpro.top/[[BUSINESS_NAME_SLUG]]/sitemap.xml
+Sitemap: https://localpro.top/electricista-económico-24-horas-terrassa/sitemap.xml
