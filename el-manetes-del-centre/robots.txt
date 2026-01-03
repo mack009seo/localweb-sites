@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://{{BUSINESS_NAME_SLUG}}.com/sitemap.xml
+Sitemap: https://localpro.top/[[BUSINESS_NAME_SLUG]]/sitemap.xml
