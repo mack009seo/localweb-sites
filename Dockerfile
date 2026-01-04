@@ -9,18 +9,19 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Configurar npm/yarn para mayor tolerancia
+# Configurar npm para mayor tolerancia
 RUN npm config set fetch-retry-maxtimeout 120000 && \
     npm config set fetch-retries 5
 
 # Moverse a la carpeta del bridge
 WORKDIR /app/whatsapp-bridge
 
-# Copiar package.json
-COPY whatsapp-bridge/package.json ./
+# Copiar package.json Y package-lock.json (clave para npm ci)
+COPY whatsapp-bridge/package*.json ./
 
-# Usar YARN en lugar de npm (suele ser más robusto para resolver dependencias complejas)
-RUN yarn install --network-timeout 100000 --verbose
+# Usar npm ci (Clean Install)
+# Instala EXACTAMENTE lo que hay en el package-lock.json, sin sorpresas ni resoluciones lentas
+RUN npm ci --omit=optional --verbose
 
 # Volver a la raíz para el resto del proyecto
 WORKDIR /app
