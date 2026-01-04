@@ -22,9 +22,7 @@ COPY whatsapp-bridge/package.json ./
 # Actualizar npm, limpiar cache e instalar dependencias
 # --omit=optional: Salta dependencias opcionales que suelen fallar al compilar en Docker
 # --no-audit: Acelera el proceso
-RUN npm install -g npm@latest && \
-    npm cache clean --force && \
-    npm install --omit=optional --no-audit --verbose
+RUN npm install --omit=optional --no-audit --verbose
 
 # Volver a la raíz para el resto del proyecto
 WORKDIR /app
