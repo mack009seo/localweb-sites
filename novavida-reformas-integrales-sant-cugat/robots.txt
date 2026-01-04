@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/novavida-reformas-integrales-sant-cugat/sitemap.xml

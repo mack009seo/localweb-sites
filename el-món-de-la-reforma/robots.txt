@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/el-món-de-la-reforma/sitemap.xml

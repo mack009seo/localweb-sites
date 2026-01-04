@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/infinitysun-sl/sitemap.xml

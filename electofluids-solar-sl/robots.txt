@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/electofluids-solar-sl/sitemap.xml

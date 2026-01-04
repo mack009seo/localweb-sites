@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/jose-antonio-martinez-lópez/sitemap.xml

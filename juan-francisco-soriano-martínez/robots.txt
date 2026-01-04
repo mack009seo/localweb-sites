@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/juan-francisco-soriano-martínez/sitemap.xml

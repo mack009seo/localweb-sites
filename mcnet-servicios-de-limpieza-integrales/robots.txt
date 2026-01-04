@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/mcnet-servicios-de-limpieza-integrales/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/vidrios-y-aluminios-e-martín/sitemap.xml

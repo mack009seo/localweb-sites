@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/joaquín-puigdomenech-sarabia/sitemap.xml

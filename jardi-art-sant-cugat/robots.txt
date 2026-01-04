@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/jardi-art-sant-cugat/sitemap.xml

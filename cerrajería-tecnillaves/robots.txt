@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/cerrajería-tecnillaves/sitemap.xml

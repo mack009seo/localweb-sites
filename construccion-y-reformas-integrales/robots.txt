@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/construccion-y-reformas-integrales/sitemap.xml

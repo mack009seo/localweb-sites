@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/dimi-reformes-vallès-occidental/sitemap.xml

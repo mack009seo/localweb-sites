@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/hidrofonts-tècnics-de-laigua-sl/sitemap.xml

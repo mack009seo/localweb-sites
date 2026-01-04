@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/little-garden-solutions-grow-shop/sitemap.xml

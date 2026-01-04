@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/centre-jardineria-masó-navarro/sitemap.xml

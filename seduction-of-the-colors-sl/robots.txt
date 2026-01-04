@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/seduction-of-the-colors-sl/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/cerrajeros-nou-barris-jordy/sitemap.xml

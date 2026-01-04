@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/rm-climatización-aerotermia-y-refrigeración/sitemap.xml

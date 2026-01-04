@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/ecoalum-carpintería-sostenible/sitemap.xml

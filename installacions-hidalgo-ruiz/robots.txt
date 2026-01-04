@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/installacions-hidalgo-ruiz/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/sm-pinturas-revestimiento-y-mas/sitemap.xml

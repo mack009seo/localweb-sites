@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/san-josep-banys-i-cuines/sitemap.xml

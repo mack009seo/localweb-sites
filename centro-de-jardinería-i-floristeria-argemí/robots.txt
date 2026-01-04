@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/centro-de-jardinería-i-floristeria-argemí/sitemap.xml

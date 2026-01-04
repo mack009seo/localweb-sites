@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/instalaciónes-y-reparaciones-batllevell-sl/sitemap.xml

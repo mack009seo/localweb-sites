@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/jose-barrios-pintor-fino-limpio-y-responsable/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/pinturas-y-de-decoración-mariano-cano/sitemap.xml

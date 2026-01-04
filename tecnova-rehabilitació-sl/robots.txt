@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/tecnova-rehabilitació-sl/sitemap.xml

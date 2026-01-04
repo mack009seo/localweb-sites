@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/agustín-rodríguez-lorite/sitemap.xml

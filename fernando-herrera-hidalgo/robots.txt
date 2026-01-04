@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/fernando-herrera-hidalgo/sitemap.xml

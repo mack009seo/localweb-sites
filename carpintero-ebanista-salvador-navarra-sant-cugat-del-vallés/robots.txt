@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/carpintero-ebanista-salvador-navarra-sant-cugat-del-vallés/sitemap.xml

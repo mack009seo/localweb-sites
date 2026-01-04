@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/jardiners-sant-adrià-sccl/sitemap.xml

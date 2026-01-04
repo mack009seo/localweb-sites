@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/simanya-jardiners-can-roca/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/iniciativas-comerciales-eléctricas-sa/sitemap.xml

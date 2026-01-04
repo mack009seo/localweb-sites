@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/fontanería-pompeya-24h/sitemap.xml

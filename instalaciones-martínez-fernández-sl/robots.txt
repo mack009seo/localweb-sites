@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/instalaciones-martínez-fernández-sl/sitemap.xml

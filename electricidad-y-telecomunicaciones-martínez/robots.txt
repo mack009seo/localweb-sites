@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/electricidad-y-telecomunicaciones-martínez/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/cofely-españa-s-a-u/sitemap.xml

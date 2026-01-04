@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/totdecor-tot-cuina-sl/sitemap.xml

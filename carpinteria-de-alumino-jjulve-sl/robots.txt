@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/carpinteria-de-alumino-jjulve-sl/sitemap.xml

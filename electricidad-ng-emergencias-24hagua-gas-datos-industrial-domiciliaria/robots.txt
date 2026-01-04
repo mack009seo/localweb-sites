@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/electricidad-ng-emergencias-24hagua-gas-datos-industrial-domiciliaria/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/dutxa-plat-sabadell/sitemap.xml

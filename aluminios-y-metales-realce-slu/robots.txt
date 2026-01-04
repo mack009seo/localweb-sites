@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/aluminios-y-metales-realce-slu/sitemap.xml

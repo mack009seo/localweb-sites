@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/pintura-i-decoració-ramón/sitemap.xml

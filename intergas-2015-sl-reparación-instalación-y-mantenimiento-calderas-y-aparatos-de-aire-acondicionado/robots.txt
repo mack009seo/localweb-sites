@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/intergas-2015-sl-reparación-instalación-y-mantenimiento-calderas-y-aparatos-de-aire-acondicionado/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/aroaluminis-tot-en-alumini/sitemap.xml

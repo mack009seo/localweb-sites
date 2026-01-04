@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/lampista-felix-galeano-y-ramon-linares/sitemap.xml

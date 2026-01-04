@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/carpintería-de-aluminio-miguel-angel-calso/sitemap.xml

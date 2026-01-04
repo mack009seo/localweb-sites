@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/empresa-de-restauracion-y-rehabilitacion-de-fachadas/sitemap.xml

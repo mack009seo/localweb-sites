@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/nueva-reforma-sabadell-reforma-de-cocina-sabadell-reforma-de-baño-sabadell-lampista-sabadell/sitemap.xml
