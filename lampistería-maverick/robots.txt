@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://localpro.top/lampistería-maverick/sitemap.xml

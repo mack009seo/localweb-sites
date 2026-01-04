@@ -703,21 +703,3 @@ footer {
         bottom: 90px;
     }
 }
-
-.btn-demo {
-    background: var(--white);
-    color: var(--primary);
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 10px;
-    font-weight: 700;
-}
-
-.btn-demo:hover {
-    background: var(--primary);
-    color: var(--white);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
