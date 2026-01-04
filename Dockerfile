@@ -1,10 +1,12 @@
 # Usar Node.js 18 como base (Debian slim para menor tamaño)
 FROM node:18-slim
 
-# Instalar Python y herramientas necesarias
+# Instalar dependencias del sistema (Python y herramientas de compilación para Node)
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
+    build-essential \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Crear directorio de trabajo
