@@ -1,5 +1,5 @@
-# Usar Node.js 18 completo para mayor compatibilidad
-FROM node:18-bullseye
+# Usar Node.js 20 Bullseye para compatibilidad con últimas dependencias
+FROM node:20-bullseye
 
 # Instalar dependencias del sistema
 RUN apt-get update && apt-get install -y \
