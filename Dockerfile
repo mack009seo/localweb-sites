@@ -1,20 +1,18 @@
-# Usar Node.js 18 como base (Debian slim para menor tamaño)
-FROM node:18-slim
+# Usar Node.js 18 completo para mayor compatibilidad con dependencias nativas
+FROM node:18
 
-# Instalar dependencias del sistema (Python y herramientas de compilación para Node)
+# Instalar Python y dependencias del sistema
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
-    build-essential \
-    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Crear directorio de trabajo
 WORKDIR /app
 
-# Instalar dependencias de Node.js primero (para aprovechar caché de capas)
+# Instalar dependencias de Node.js
 COPY whatsapp-bridge/package*.json ./whatsapp-bridge/
-RUN cd whatsapp-bridge && npm install
+RUN cd whatsapp-bridge && npm install --verbose
 
 # Instalar dependencias de Python
 COPY requirements.txt .
