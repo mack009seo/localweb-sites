@@ -23,17 +23,18 @@
 
     <style>
         :root {
-            /* Palette - Intermediate & Balanced */
+            /* Palette - Intermediate & Balanced (Darker tones) */
             --primary: #2563eb;
             --primary-dark: #1d4ed8;
             --primary-light: #dbeafe;
             --accent: #10b981;
             --secondary: #475569;
             --dark: #0f172a;
-            --background: #f1f5f9;
-            /* Soft Slate background */
+            --background: #cbd5e1;
+            /* Slate 300 - Clearly intermediate */
             --white: #ffffff;
-            --border: #cbd5e1;
+            --border: #94a3b8;
+            /* Darker border for contrast */
             --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
@@ -104,7 +105,8 @@
         }
 
         .btn-secondary {
-            background: var(--background);
+            background: #e2e8f0;
+            /* Soft gray for secondary */
             color: var(--dark);
             border: 1px solid var(--border);
         }
@@ -121,8 +123,8 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(241, 245, 249, 0.85);
-            /* Matches background */
+            background: rgba(203, 213, 225, 0.9);
+            /* Opaque Slate 300 */
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
             padding: 16px 0;
@@ -187,9 +189,9 @@
         }
 
         .search-glass {
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.5);
             border-radius: var(--radius-lg);
             padding: 30px;
             box-shadow: var(--shadow-xl);
@@ -418,8 +420,8 @@
         /* --- Benefits --- */
         .benefits {
             padding: 100px 0;
-            background: #e2e8f0;
-            /* Slightly darker intermediate for section separation */
+            background: #94a3b8;
+            /* Slate 400 - Darker intermediate */
         }
 
         .benefits-grid {
@@ -471,7 +473,7 @@
         .cta-final {
             padding: 100px 0;
             text-align: center;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            background: var(--dark);
             color: white;
             border-radius: var(--radius-lg);
             margin: 40px 20px;
@@ -525,12 +527,50 @@
 
         /* Mobile Adjustments */
         @media (max-width: 768px) {
+            .hero {
+                padding: 120px 0 60px;
+            }
+
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.1rem;
+                padding: 0 10px;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .search-section {
+                margin-top: -40px;
+                padding: 40px 0;
             }
 
             .search-glass {
                 flex-direction: column;
+                padding: 20px;
+                gap: 12px;
+            }
+
+            .search-field {
+                min-width: 100%;
+                max-width: 100% !important;
+            }
+
+            .section-header h2 {
+                font-size: 1.75rem;
+            }
+
+            .cta-final {
+                margin: 20px 10px;
+                padding: 60px 20px;
+            }
+
+            .cta-final h2 {
+                font-size: 2rem;
+            }
+
+            #resultsGrid {
+                grid-template-columns: 1fr;
             }
 
             .footer-grid {
