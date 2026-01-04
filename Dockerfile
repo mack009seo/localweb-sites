@@ -26,7 +26,7 @@ RUN npm ci --omit=optional --verbose
 # Volver a la raíz para el resto del proyecto
 WORKDIR /app
 COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt --break-system-packages
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
