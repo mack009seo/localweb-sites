@@ -13,10 +13,18 @@ WORKDIR /app
 RUN npm config set fetch-retry-maxtimeout 120000 && \
     npm config set fetch-retries 5
 
-# Moverse a la carpeta del bridge e instalar
+# Moverse a la carpeta del bridge
 WORKDIR /app/whatsapp-bridge
-COPY whatsapp-bridge/package*.json ./
-RUN npm install --legacy-peer-deps --verbose
+
+# Copiar solo el package.json para forzar una resolución limpia (ignorando el lockfile local)
+COPY whatsapp-bridge/package.json ./
+
+# Actualizar npm, limpiar cache e instalar dependencias
+# --omit=optional: Salta dependencias opcionales que suelen fallar al compilar en Docker
+# --no-audit: Acelera el proceso
+RUN npm install -g npm@latest && \
+    npm cache clean --force && \
+    npm install --omit=optional --no-audit --verbose
 
 # Volver a la raíz para el resto del proyecto
 WORKDIR /app
