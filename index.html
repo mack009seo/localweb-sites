@@ -179,24 +179,81 @@
             font-size: clamp(2.5rem, 5vw, 4.5rem);
             line-height: 1.1;
             margin-bottom: 24px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
+            /* max-width removed for grid layout */
             text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .hero p {
             font-size: 1.25rem;
             color: var(--text-muted);
-            max-width: 650px;
-            margin: 0 auto 40px;
+            margin-bottom: 40px;
         }
 
         .hero-btns {
             display: flex;
-            justify-content: center;
             gap: 16px;
             flex-wrap: wrap;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            /* Floating animation */
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 992px) {
+            .hero .container {
+                flex-direction: column-reverse;
+                /* Image on top? Or text on top? usually text first on mobile for SEO/Context */
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-btns {
+                justify-content: center;
+            }
+
+            .hero h1,
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-image {
+                margin-top: 40px;
+            }
         }
 
         /* --- Sections General --- */
@@ -536,13 +593,20 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <h1>Calidad profesional para negocios locales</h1>
-                <p>Creamos páginas web listas para conseguir clientes y destacar en Google, pensadas para autónomos y
-                    pequeñas empresas.</p>
-                <div class="hero-btns">
-                    <a href="#cta" class="btn btn-primary">Quiero mi web profesional</a>
-                    <a href="#examples" class="btn btn-secondary">Ver ejemplos</a>
+            <div class="container" style="display: flex; align-items: center; gap: 40px;">
+                <div class="hero-content">
+                    <h1>Calidad profesional para negocios locales</h1>
+                    <p>Creamos páginas web listas para conseguir clientes y destacar en Google, pensadas para autónomos
+                        y
+                        pequeñas empresas.</p>
+                    <div class="hero-btns">
+                        <a href="#cta" class="btn btn-primary">Quiero mi web profesional</a>
+                        <a href="#examples" class="btn btn-secondary">Ver ejemplos</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/home/hero.png" alt="Diseño web profesional para negocios locales" width="600"
+                        height="400">
                 </div>
             </div>
         </section>
