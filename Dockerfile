@@ -1,5 +1,5 @@
-# Usar Node.js 18 completo para mayor compatibilidad con dependencias nativas
-FROM node:18
+# Usar Node.js 18 Bullseye (Debian 11) para máxima estabilidad
+FROM node:18-bullseye
 
 # Instalar Python y dependencias del sistema
 RUN apt-get update && apt-get install -y \
@@ -10,9 +10,17 @@ RUN apt-get update && apt-get install -y \
 # Crear directorio de trabajo
 WORKDIR /app
 
-# Instalar dependencias de Node.js
-COPY whatsapp-bridge/package*.json ./whatsapp-bridge/
-RUN cd whatsapp-bridge && npm install --verbose
+# Configurar npm para evitar errores de red y memoria
+RUN npm config set fetch-retry-maxtimeout 120000 && \
+    npm config set fetch-retries 5
+
+# Copiar archivos de dependencia de Node
+COPY whatsapp-bridge/package.json ./whatsapp-bridge/
+
+# Instalar dependencias ignorando el lockfile y con logs
+RUN cd whatsapp-bridge && \
+    rm -f package-lock.json && \
+    npm install --no-package-lock --verbose
 
 # Instalar dependencias de Python
 COPY requirements.txt .
