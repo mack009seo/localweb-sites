@@ -9,20 +9,18 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Configurar npm para mayor tolerancia
+# Configurar npm/yarn para mayor tolerancia
 RUN npm config set fetch-retry-maxtimeout 120000 && \
     npm config set fetch-retries 5
 
 # Moverse a la carpeta del bridge
 WORKDIR /app/whatsapp-bridge
 
-# Copiar solo el package.json para forzar una resolución limpia (ignorando el lockfile local)
+# Copiar package.json
 COPY whatsapp-bridge/package.json ./
 
-# Actualizar npm, limpiar cache e instalar dependencias
-# --omit=optional: Salta dependencias opcionales que suelen fallar al compilar en Docker
-# --no-audit: Acelera el proceso
-RUN npm install --omit=optional --no-audit --verbose
+# Usar YARN en lugar de npm (suele ser más robusto para resolver dependencias complejas)
+RUN yarn install --network-timeout 100000 --verbose
 
 # Volver a la raíz para el resto del proyecto
 WORKDIR /app
