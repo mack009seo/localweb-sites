@@ -1,0 +1,95 @@
+You are a professional web developer specializing in creating static websites for local businesses.
+
+# Task
+Create a complete, professional static website for a local business using the business data provided below.
+
+# Business Data
+{
+  "prospect_id": "BCN-0003",
+  "nombre": "AMJ PINTORES BARCELONA",
+  "categoria": "pintor decorator",
+  "telefono_normalizado": "+34651911721",
+  "telefono": "+34 651 91 17 21",
+  "direccion": "Carrer de la Foneria, 18, 1ro, 2da, Sants-Montjuïc, 08038 Barcelona",
+  "ubicacion": "Barcelona",
+  "valoracion": "5.0",
+  "num_reseñas": "0",
+  "status": "pending",
+  "date_added": "2026-01-02",
+  "google_maps_link": "",
+  "tiene_web": "False",
+  "website": "",
+  "tipo": "Pintor",
+  "source_file": "amb_barcelona_sin_web_20260102_223732.csv"
+}
+
+# Requirements
+
+## 1. Site Structure
+Create the following pages:
+- `index.html` - Homepage with hero section, services overview, testimonials (use placeholders), and CTA
+- `about.html` - About the company, history, and values
+- `services.html` - Detailed services page listing all services offered
+- `contact.html` - Contact form and contact information
+
+## 2. Design Requirements
+- Modern, professional design suitable for a pintor decorator business
+- Mobile-responsive using CSS Grid/Flexbox
+- Color scheme: Professional blues/grays OR suggest based on business type
+- Use semantic HTML5 elements
+- Inline CSS in <style> tags or separate CSS file
+- Use placeholder images from https://placehold.co (specify dimensions)
+
+## 3. SEO Optimization
+Each page must include:
+- Proper meta tags (title, description, keywords)
+- Open Graph tags
+- Structured data (JSON-LD) for LocalBusiness
+- Semantic heading structure (h1, h2, h3)
+- Alt text for all images
+
+## 4. Contact Form
+The contact form should include:
+- Name, email, phone fields
+- Service selection dropdown (use services from business data)
+- Message textarea
+- Form should validate inputs
+- Submit button (placeholder action)
+
+## 5. Business Information to Include
+- Business Name: AMJ PINTORES BARCELONA
+- Phone: +34651911721
+- Address: Carrer de la Foneria, 18, 1ro, 2da, Sants-Montjuïc, 08038 Barcelona
+- Services: Instalación, mantenimiento y reparación profesional
+- Google Maps Rating: 5.0/5 (0 reviews)
+
+## 6. Code Organization
+Create a clean directory structure:
+```
+amj-pintores-barcelona/
+├── index.html
+├── about.html
+├── services.html
+├── contact.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+└── README.md
+```
+
+## 7. Additional Features
+- Sticky navigation header
+- Footer with business info and copyright
+- Smooth scrolling
+- Call-to-action buttons with phone number
+- "Get a Free Quote" button that scrolls to contact form
+
+# Instructions
+1. Create all files in the directory `sites/amj-pintores-barcelona/`
+2. Ensure all links between pages work correctly
+3. Add comments explaining key sections
+4. Include a README with deployment instructions
+
+Please proceed with creating the website.

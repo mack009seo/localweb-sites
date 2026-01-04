@@ -1,0 +1,553 @@
+======================================================================
+🚀 SCRAPER EXTENSIVO - ÁREA METROPOLITANA BARCELONA
+======================================================================
+📍 Ubicaciones: 8 ciudades
+🔍 Nichos: 13 categorías
+🔑 API Key: 2535e56d4ef528df2403...
+🎯 Objetivo: 100+ negocios sin web
+======================================================================
+
+
+======================================================================
+📍 CIUDAD: Barcelona
+======================================================================
+🔍 Buscando: reformas cocina Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 0/20 (Acumulado: 0)
+🔍 Buscando: reformas baño Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 0/20 (Acumulado: 0)
+🔍 Buscando: reformas integrales Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 0/20 (Acumulado: 0)
+🔍 Buscando: carpintero aluminio Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 3)
+🔍 Buscando: tratamiento humedades Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 14 negocios
+   → Sin web: 0/14 (Acumulado: 3)
+🔍 Buscando: fontanero Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 0/20 (Acumulado: 3)
+🔍 Buscando: electricista Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 6)
+🔍 Buscando: aire acondicionado Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 8)
+🔍 Buscando: instalador placas solares Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 0/20 (Acumulado: 8)
+🔍 Buscando: pintor decorator Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 1/20 (Acumulado: 9)
+
+   📊 Progreso: 10 búsquedas completadas
+   🎯 Negocios sin web acumulados: 9
+🔍 Buscando: jardinero Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 12)
+🔍 Buscando: cerrajero Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 0/20 (Acumulado: 12)
+🔍 Buscando: limpieza fachadas Barcelona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 14)
+
+======================================================================
+📍 CIUDAD: L'Hospitalet de Llobregat
+======================================================================
+🔍 Buscando: reformas cocina L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 6/20 (Acumulado: 20)
+🔍 Buscando: reformas baño L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 7/20 (Acumulado: 27)
+🔍 Buscando: reformas integrales L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 4/20 (Acumulado: 31)
+🔍 Buscando: carpintero aluminio L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 8/20 (Acumulado: 39)
+🔍 Buscando: tratamiento humedades L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 7 negocios
+   → Sin web: 0/7 (Acumulado: 39)
+🔍 Buscando: fontanero L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 6/20 (Acumulado: 45)
+🔍 Buscando: electricista L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 5/20 (Acumulado: 50)
+
+   📊 Progreso: 20 búsquedas completadas
+   🎯 Negocios sin web acumulados: 50
+🔍 Buscando: aire acondicionado L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 1/20 (Acumulado: 51)
+🔍 Buscando: instalador placas solares L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 11 negocios
+   → Sin web: 1/11 (Acumulado: 52)
+🔍 Buscando: pintor decorator L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 17 negocios
+   → Sin web: 7/17 (Acumulado: 59)
+🔍 Buscando: jardinero L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 14 negocios
+   → Sin web: 7/14 (Acumulado: 66)
+🔍 Buscando: cerrajero L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 68)
+🔍 Buscando: limpieza fachadas L'Hospitalet de Llobregat
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 71)
+
+======================================================================
+📍 CIUDAD: Badalona
+======================================================================
+🔍 Buscando: reformas cocina Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 74)
+🔍 Buscando: reformas baño Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 1/20 (Acumulado: 75)
+🔍 Buscando: reformas integrales Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 77)
+🔍 Buscando: carpintero aluminio Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 10/20 (Acumulado: 87)
+
+   📊 Progreso: 30 búsquedas completadas
+   🎯 Negocios sin web acumulados: 87
+🔍 Buscando: tratamiento humedades Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 1 negocios
+   → Sin web: 0/1 (Acumulado: 87)
+🔍 Buscando: fontanero Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 4/20 (Acumulado: 91)
+🔍 Buscando: electricista Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 94)
+🔍 Buscando: aire acondicionado Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 97)
+🔍 Buscando: instalador placas solares Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 12 negocios
+   → Sin web: 2/12 (Acumulado: 99)
+🔍 Buscando: pintor decorator Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 15 negocios
+   → Sin web: 5/15 (Acumulado: 104)
+🔍 Buscando: jardinero Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 4/20 (Acumulado: 108)
+🔍 Buscando: cerrajero Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 110)
+🔍 Buscando: limpieza fachadas Badalona
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 4/20 (Acumulado: 114)
+
+======================================================================
+📍 CIUDAD: Sabadell
+======================================================================
+🔍 Buscando: reformas cocina Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 116)
+
+   📊 Progreso: 40 búsquedas completadas
+   🎯 Negocios sin web acumulados: 116
+🔍 Buscando: reformas baño Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 118)
+🔍 Buscando: reformas integrales Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 1/20 (Acumulado: 119)
+🔍 Buscando: carpintero aluminio Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 121)
+🔍 Buscando: tratamiento humedades Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 3 negocios
+   → Sin web: 1/3 (Acumulado: 122)
+🔍 Buscando: fontanero Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 11/20 (Acumulado: 133)
+🔍 Buscando: electricista Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 7/20 (Acumulado: 140)
+🔍 Buscando: aire acondicionado Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 4/20 (Acumulado: 144)
+🔍 Buscando: instalador placas solares Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 7 negocios
+   → Sin web: 1/7 (Acumulado: 145)
+🔍 Buscando: pintor decorator Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 19 negocios
+   → Sin web: 6/19 (Acumulado: 151)
+🔍 Buscando: jardinero Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 1/20 (Acumulado: 152)
+
+   📊 Progreso: 50 búsquedas completadas
+   🎯 Negocios sin web acumulados: 152
+🔍 Buscando: cerrajero Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 155)
+🔍 Buscando: limpieza fachadas Sabadell
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 12 negocios
+   → Sin web: 0/12 (Acumulado: 155)
+
+======================================================================
+📍 CIUDAD: Terrassa
+======================================================================
+🔍 Buscando: reformas cocina Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 158)
+🔍 Buscando: reformas baño Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 160)
+🔍 Buscando: reformas integrales Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 17 negocios
+   → Sin web: 4/17 (Acumulado: 164)
+🔍 Buscando: carpintero aluminio Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 0/20 (Acumulado: 164)
+🔍 Buscando: tratamiento humedades Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 166)
+🔍 Buscando: fontanero Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 8/20 (Acumulado: 174)
+🔍 Buscando: electricista Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 7/20 (Acumulado: 181)
+🔍 Buscando: aire acondicionado Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 1/20 (Acumulado: 182)
+
+   📊 Progreso: 60 búsquedas completadas
+   🎯 Negocios sin web acumulados: 182
+🔍 Buscando: instalador placas solares Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 7 negocios
+   → Sin web: 1/7 (Acumulado: 183)
+🔍 Buscando: pintor decorator Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 9/20 (Acumulado: 192)
+🔍 Buscando: jardinero Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 7/20 (Acumulado: 199)
+🔍 Buscando: cerrajero Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 15 negocios
+   → Sin web: 5/15 (Acumulado: 204)
+🔍 Buscando: limpieza fachadas Terrassa
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 207)
+
+======================================================================
+📍 CIUDAD: Mataró
+======================================================================
+🔍 Buscando: reformas cocina Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 1/20 (Acumulado: 208)
+🔍 Buscando: reformas baño Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 211)
+🔍 Buscando: reformas integrales Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 214)
+🔍 Buscando: carpintero aluminio Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 4/20 (Acumulado: 218)
+🔍 Buscando: tratamiento humedades Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 1 negocios
+   → Sin web: 0/1 (Acumulado: 218)
+
+   📊 Progreso: 70 búsquedas completadas
+   🎯 Negocios sin web acumulados: 218
+🔍 Buscando: fontanero Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 10 negocios
+   → Sin web: 4/10 (Acumulado: 222)
+🔍 Buscando: electricista Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 12/20 (Acumulado: 234)
+🔍 Buscando: aire acondicionado Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 2/20 (Acumulado: 236)
+🔍 Buscando: instalador placas solares Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 10 negocios
+   → Sin web: 0/10 (Acumulado: 236)
+🔍 Buscando: pintor decorator Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 18 negocios
+   → Sin web: 9/18 (Acumulado: 245)
+🔍 Buscando: jardinero Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 4/20 (Acumulado: 249)
+🔍 Buscando: cerrajero Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 10 negocios
+   → Sin web: 2/10 (Acumulado: 251)
+🔍 Buscando: limpieza fachadas Mataró
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 18 negocios
+   → Sin web: 3/18 (Acumulado: 254)
+
+======================================================================
+📍 CIUDAD: Granollers
+======================================================================
+🔍 Buscando: reformas cocina Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 2 negocios
+   → Sin web: 0/2 (Acumulado: 254)
+🔍 Buscando: reformas baño Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 12 negocios
+   → Sin web: 0/12 (Acumulado: 254)
+
+   📊 Progreso: 80 búsquedas completadas
+   🎯 Negocios sin web acumulados: 254
+🔍 Buscando: reformas integrales Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 2 negocios
+   → Sin web: 0/2 (Acumulado: 254)
+🔍 Buscando: carpintero aluminio Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 4/20 (Acumulado: 258)
+🔍 Buscando: tratamiento humedades Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 14 negocios
+   → Sin web: 0/14 (Acumulado: 258)
+🔍 Buscando: fontanero Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 12 negocios
+   → Sin web: 5/12 (Acumulado: 263)
+🔍 Buscando: electricista Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 6/20 (Acumulado: 269)
+🔍 Buscando: aire acondicionado Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 3/20 (Acumulado: 272)
+🔍 Buscando: instalador placas solares Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 10 negocios
+   → Sin web: 0/10 (Acumulado: 272)
+🔍 Buscando: pintor decorator Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 19 negocios
+   → Sin web: 4/19 (Acumulado: 276)
+🔍 Buscando: jardinero Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 19 negocios
+   → Sin web: 4/19 (Acumulado: 280)
+🔍 Buscando: cerrajero Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 11 negocios
+   → Sin web: 6/11 (Acumulado: 286)
+
+   📊 Progreso: 90 búsquedas completadas
+   🎯 Negocios sin web acumulados: 286
+🔍 Buscando: limpieza fachadas Granollers
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 16 negocios
+   → Sin web: 1/16 (Acumulado: 287)
+
+======================================================================
+📍 CIUDAD: Sant Cugat del Vallès
+======================================================================
+🔍 Buscando: reformas cocina Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 15 negocios
+   → Sin web: 0/15 (Acumulado: 287)
+🔍 Buscando: reformas baño Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 1/20 (Acumulado: 288)
+🔍 Buscando: reformas integrales Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 5/20 (Acumulado: 293)
+🔍 Buscando: carpintero aluminio Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 12 negocios
+   → Sin web: 3/12 (Acumulado: 296)
+🔍 Buscando: tratamiento humedades Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 2 negocios
+   → Sin web: 0/2 (Acumulado: 296)
+🔍 Buscando: fontanero Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 8 negocios
+   → Sin web: 1/8 (Acumulado: 297)
+🔍 Buscando: electricista Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 8/20 (Acumulado: 305)
+🔍 Buscando: aire acondicionado Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 1/20 (Acumulado: 306)
+🔍 Buscando: instalador placas solares Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 7 negocios
+   → Sin web: 1/7 (Acumulado: 307)
+
+   📊 Progreso: 100 búsquedas completadas
+   🎯 Negocios sin web acumulados: 307
+🔍 Buscando: pintor decorator Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 6 negocios
+   → Sin web: 1/6 (Acumulado: 308)
+🔍 Buscando: jardinero Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 20 negocios
+   → Sin web: 4/20 (Acumulado: 312)
+🔍 Buscando: cerrajero Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 11 negocios
+   → Sin web: 4/11 (Acumulado: 316)
+🔍 Buscando: limpieza fachadas Sant Cugat del Vallès
+  📄 Claves en respuesta: ['searchParameters', 'll', 'places', 'credits']
+✓ Encontrados: 7 negocios
+   → Sin web: 0/7 (Acumulado: 316)
+💾 Guardados 1723 negocios en: data/amb_barcelona_all_20260102_223732.csv
+💾 Guardados 316 negocios en: data/amb_barcelona_sin_web_20260102_223732.csv
+
+======================================================================
+📊 RESUMEN FINAL
+======================================================================
+
+📈 Métricas globales:
+  Búsquedas realizadas:     104
+  Total negocios:           1723
+  Sin sitio web:            316 (18.3%)
+  Valoración media:         4.37/5
+
+📍 Negocios sin web por ciudad:
+  L'Hospitalet de Llobregat: 57
+  Terrassa: 52
+  Mataró: 47
+  Badalona: 43
+  Sabadell: 41
+  Granollers: 33
+  Sant Cugat del Vallès: 29
+  Barcelona: 14
+
+🏷️ Negocios sin web por categoría:
+  electricista: 51
+  pintor decorator: 42
+  fontanero: 39
+  carpintero aluminio: 34
+  jardinero: 34
+  cerrajero: 24
+  reformas integrales: 19
+  aire acondicionado: 17
+  limpieza fachadas: 16
+  reformas baño: 16
+  reformas cocina: 15
+  instalador placas solares: 6
+  tratamiento humedades: 3
+
+🏆 TOP 10 MEJORES PROSPECTOS (sin web):
+   1. Carpinteria de aluminio Jos-mar SL.
+      ⭐ 5/5 | 📞 +34 934 11 02 90 | 📍 Barcelona
+   2. ELECTRICISTA LEANDRO
+      ⭐ 5/5 | 📞 +34 615 61 01 39 | 📍 Barcelona
+   3. AMJ PINTORES BARCELONA
+      ⭐ 5/5 | 📞 +34 651 91 17 21 | 📍 Barcelona
+   4. Rehabilitación de Tejados Tapar en Barce
+      ⭐ 5/5 | 📞 +34 931 31 78 68 | 📍 Barcelona
+   5. Ikra Reformas e Interiorismo, S.L.
+      ⭐ 5/5 | 📞 +34 933 38 51 33 | 📍 L'Hospitalet de Llobregat
+   6. Ikra Reformas e Interiorismo, S.L.
+      ⭐ 5/5 | 📞 +34 933 38 51 33 | 📍 L'Hospitalet de Llobregat
+   7. Ikra Reformas e Interiorismo, S.L.
+      ⭐ 5/5 | 📞 +34 933 38 51 33 | 📍 L'Hospitalet de Llobregat
+   8. Carpintería José Ferreiro
+      ⭐ 5/5 | 📞 +34 933 32 32 09 | 📍 L'Hospitalet de Llobregat
+   9. Mi espacio int
+      ⭐ 5/5 | 📞 +34 634 13 63 32 | 📍 L'Hospitalet de Llobregat
+  10. Fontanero,electricista,pintor, reformas,
+      ⭐ 5/5 | 📞 +34 602 80 99 41 | 📍 L'Hospitalet de Llobregat
+
+======================================================================
+✅ ARCHIVOS GENERADOS:
+   → data/amb_barcelona_all_20260102_223732.csv (1723 negocios)
+   → data/amb_barcelona_sin_web_20260102_223732.csv (316 prospects)
+======================================================================
+

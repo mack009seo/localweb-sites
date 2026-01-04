@@ -1,0 +1,2 @@
+Para generar el sitio de Carpinteria de aluminio Jos-mar SL., usa el prompt en: prompts/generated/BCN-0001_prompt.txt
+El sitio se creará en: sites/carpinteria-de-aluminio-jos-mar-sl/

@@ -1,0 +1,7 @@
+nombre,direccion,telefono,categoria,ubicacion,valoracion,num_reseñas,tiene_web,website,google_maps_link,tipo
+Electricista Pompeya 24h,"Av. de Catalunya, 73, 77, 08905 L'Hospitalet de Llobregat, Barcelona, España",+34 632 92 35 29,electricista,Barcelona,4.9,0,False,,,Electricista
+ELECTRICISTA LEANDRO,"Carrer de los Castillejos, 251, Eixample, 08013 Barcelona, España",+34 615 61 01 39,electricista,Barcelona,5,0,False,,,Electricista
+"Lampistería María K, Lampista","Carrer de la Marina, 234, Eixample, 08013 Barcelona, España",+34 935 41 87 02,electricista,Barcelona,4.9,0,False,,,Electricista
+Electricidad Gas Fontaneria Barcelona,"Carrer de Mallorca, Eixample, 08013 Barcelona, España",+34 622 72 88 19,electricista,Barcelona,5,0,False,,,Electricista
+RM CLIMATIZACIÓN AEROTERMIA Y REFRIGERACIÓN,"Carrer de Floridablanca, 101, Eixample, 08015 Barcelona, España",+34 630 24 89 41,aire acondicionado,Barcelona,4.9,0,False,,,Empresa de climatización
+Instalador de aires acondicionados FS instal·lacions,"Carrer de José Millán González, numero 6, Horta-Guinardó, 08024 Barcelona, España",,aire acondicionado,Barcelona,4.8,0,False,,,Servicio de reparación de aire acondicionado

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  whatsapp-bridge:
+    build: .
+    container_name: localpro-bridge
+    ports:
+      - "3001:3001"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      # Persistencia de la sesión de WhatsApp para no tener que escanear el QR cada vez
+      - whatsapp_session:/app/whatsapp-bridge/auth_info_baileys
+    restart: unless-stopped
+
+volumes:
+  whatsapp_session:
