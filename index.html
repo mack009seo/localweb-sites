@@ -199,70 +199,6 @@
             flex-wrap: wrap;
         }
 
-        /* --- Search Section --- */
-        .search-section {
-            padding: 60px 0;
-            margin-top: -80px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .search-glass {
-            background: rgba(30, 41, 59, 0.7);
-            /* Darker glass */
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: 30px;
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            gap: 15px;
-            max-width: 900px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-        }
-
-        .search-field {
-            flex: 1;
-            min-width: 250px;
-            position: relative;
-        }
-
-        .search-field input,
-        .search-field select {
-            width: 100%;
-            padding: 16px 20px;
-            border-radius: var(--radius-md);
-            border: 1px solid var(--border);
-            background: rgba(0, 0, 0, 0.3);
-            color: var(--white);
-            font-size: 1rem;
-            outline: none;
-            transition: var(--transition);
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .search-field input::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .search-field input:focus,
-        .search-field select:focus {
-            border-color: var(--primary);
-            box-shadow: 0 0 0 2px var(--primary-light);
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        /* Needed for select dropdown arrow color in some browsers */
-        select option {
-            background: var(--dark);
-            color: var(--white);
-        }
-
-        .btn-search {
-            min-width: 160px;
-        }
-
         /* --- Sections General --- */
         .categories,
         .cities,
@@ -288,21 +224,20 @@
             font-size: 1.2rem;
         }
 
-        /* --- Category Cards --- */
+        /* --- Category Cards (Service List) --- */
         .category-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 24px;
         }
 
         .category-card {
             background: var(--card-bg);
-            padding: 30px 20px;
+            padding: 30px;
             border-radius: var(--radius-md);
-            text-align: center;
+            text-align: left;
             display: flex;
             flex-direction: column;
-            align-items: center;
             gap: 16px;
             border: 1px solid var(--border);
             transition: var(--transition);
@@ -316,87 +251,42 @@
         }
 
         .category-icon {
-            font-size: 2.5rem;
+            font-size: 2rem;
             background: rgba(255, 255, 255, 0.05);
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
             border: 1px solid var(--border);
+            margin-bottom: 10px;
+            color: var(--primary);
         }
 
         .category-card h3 {
-            color: var(--text-main);
-            font-weight: 600;
-        }
-
-        /* --- Business List (Dynamic) --- */
-        #resultsGrid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 24px;
-        }
-
-        .biz-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-md);
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-        }
-
-        .biz-card:hover {
-            border-color: var(--primary);
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .biz-tag {
-            background: var(--primary-light);
-            color: var(--primary);
-            padding: 6px 14px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            width: fit-content;
-            margin-bottom: 16px;
-            border: 1px solid rgba(129, 140, 248, 0.3);
-        }
-
-        .biz-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 8px;
             color: var(--white);
+            font-weight: 700;
+            font-size: 1.25rem;
         }
 
-        .biz-card p {
+        .category-card p {
             color: var(--text-muted);
             font-size: 0.95rem;
-            margin-bottom: 24px;
+            line-height: 1.5;
         }
 
-        .biz-footer {
+        .example-tag {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
             margin-top: auto;
+            padding-top: 15px;
             border-top: 1px solid var(--border);
-            padding-top: 16px;
         }
 
-        .biz-link {
+        .example-tag strong {
             color: var(--primary);
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .biz-link:hover {
-            color: var(--white);
-            gap: 10px;
         }
 
         /* --- How It Works --- */
@@ -448,6 +338,7 @@
             /* Match card bg for alternate section */
             border-top: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
+            padding: 100px 0;
         }
 
         .benefits-grid {
@@ -485,6 +376,10 @@
         }
 
         /* --- Testimonials --- */
+        .testimonials {
+            padding: 100px 0;
+        }
+
         .testimonial-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -513,38 +408,6 @@
             text-transform: uppercase;
             font-size: 0.9rem;
             letter-spacing: 0.05em;
-        }
-
-        /* --- Cities --- */
-        .cities {
-            background: #0f172a;
-            /* Darkest Slate */
-            color: white;
-            padding: 80px 0;
-        }
-
-        .city-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-        }
-
-        .city-link {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 12px 24px;
-            border-radius: 50px;
-            font-weight: 500;
-            font-size: 0.95rem;
-            border: 1px solid var(--border);
-            color: var(--text-muted);
-        }
-
-        .city-link:hover {
-            background: var(--primary);
-            color: var(--white);
-            border-color: var(--primary);
-            transform: scale(1.05);
         }
 
         /* --- CTA Final --- */
@@ -637,22 +500,6 @@
                 padding: 0 10px;
             }
 
-            .search-section {
-                padding: 20px 0;
-            }
-
-            .search-glass {
-                flex-direction: column;
-                padding: 24px;
-                gap: 16px;
-                background: rgba(30, 41, 59, 0.9);
-            }
-
-            .search-field {
-                min-width: 100%;
-                max-width: 100% !important;
-            }
-
             .section-header h2 {
                 font-size: 2rem;
             }
@@ -665,10 +512,6 @@
 
             .cta-final h2 {
                 font-size: 2.2rem;
-            }
-
-            #resultsGrid {
-                grid-template-columns: 1fr;
             }
 
             .footer-grid {
@@ -685,8 +528,7 @@
         <div class="container">
             <a href="/" class="logo">Local<span>Pro</span></a>
             <div class="header-btns">
-                <a href="#search" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">Buscar</a>
-                <a href="#cta" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Mi Web</a>
+                <a href="#cta" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Crear mi web</a>
             </div>
         </div>
     </header>
@@ -700,109 +542,88 @@
                     pequeñas empresas.</p>
                 <div class="hero-btns">
                     <a href="#cta" class="btn btn-primary">Quiero mi web profesional</a>
-                    <a href="#search" class="btn btn-secondary">Buscar profesionales cerca de mí</a>
+                    <a href="#examples" class="btn btn-secondary">Ver ejemplos</a>
                 </div>
             </div>
         </section>
 
-        <!-- Search Bar -->
-        <section id="search" class="search-section">
-            <div class="container">
-                <div class="search-glass">
-                    <div class="search-field">
-                        <input type="text" id="mainSearch"
-                            placeholder="¿Qué servicio buscas? (ej: electricista Barcelona)">
-                    </div>
-                    <div class="search-field" style="max-width: 200px;">
-                        <select id="catFilter">
-                            <option value="">Todas las categorías</option>
-                            <option value="electricista">Electricista</option>
-                            <option value="pintor">Pintor</option>
-                            <option value="fontanero">Fontanero</option>
-                            <option value="jardinero">Jardinero</option>
-                            <option value="limpieza">Limpieza</option>
-                            <option value="reformas">Reformas</option>
-                        </select>
-                    </div>
-                    <button class="btn btn-primary btn-search" id="searchBtn">Buscar</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Categories -->
-        <section class="categories">
+        <!-- Categories / Services -->
+        <section id="examples" class="categories">
             <div class="container">
                 <div class="section-header">
-                    <h2>Encuentra por categoría</h2>
-                    <p>Accede directamente a los mejores profesionales especializados.</p>
+                    <h2>Webs profesionales por sector</h2>
+                    <p>Adaptamos el diseño y el contenido a la realidad de tu oficio.</p>
                 </div>
                 <div class="category-grid">
-                    
-            <a href="/categoria/electricista" class="category-card">
-                <div class="category-icon">⚡</div>
-                <h3>Electricista</h3>
-            </a>
-            
-            <a href="/categoria/pintor" class="category-card">
-                <div class="category-icon">🎨</div>
-                <h3>Pintor</h3>
-            </a>
-            
-            <a href="/categoria/fontanero" class="category-card">
-                <div class="category-icon">🚰</div>
-                <h3>Fontanero</h3>
-            </a>
-            
-            <a href="/categoria/jardinero" class="category-card">
-                <div class="category-icon">🌳</div>
-                <h3>Jardinero</h3>
-            </a>
-            
-            <a href="/categoria/carpintero" class="category-card">
-                <div class="category-icon">🪚</div>
-                <h3>Carpintero</h3>
-            </a>
-            
-            <a href="/categoria/carpinteria-aluminio" class="category-card">
-                <div class="category-icon">🪟</div>
-                <h3>Carpintería de Aluminio</h3>
-            </a>
-            
-            <a href="/categoria/limpieza" class="category-card">
-                <div class="category-icon">🧹</div>
-                <h3>Limpieza</h3>
-            </a>
-            
-            <a href="/categoria/placas-solares" class="category-card">
-                <div class="category-icon">☀️</div>
-                <h3>Placas Solares</h3>
-            </a>
-            
-            <a href="/categoria/cerrajero" class="category-card">
-                <div class="category-icon">🔑</div>
-                <h3>Cerrajero</h3>
-            </a>
-            
-            <a href="/categoria/reformas" class="category-card">
-                <div class="category-icon">🏠</div>
-                <h3>Reformas</h3>
-            </a>
-            
-            <a href="/categoria/aire-acondicionado" class="category-card">
-                <div class="category-icon">❄️</div>
-                <h3>Aire Acondicionado</h3>
-            </a>
-            
-                </div>
-            </div>
-        </section>
-
-        <!-- Dynamic Results -->
-        <section class="results-section">
-            <div class="container">
-                <div id="resultsInfo" style="margin-bottom: 20px; font-weight: 500;"></div>
-                <div id="resultsGrid">
-                    <!-- JS Injected -->
+                    <!-- Fontaneros -->
+                    <div class="category-card">
+                        <div class="category-icon">🔧</div>
+                        <h3>Fontaneros</h3>
+                        <div class="example-tag">Ejemplo real: <strong>Fontanería Pérez, fontaneros en Madrid</strong>
+                        </div>
+                    </div>
+                    <!-- Electricistas -->
+                    <div class="category-card">
+                        <div class="category-icon">⚡</div>
+                        <h3>Electricistas</h3>
+                        <div class="example-tag">Ejemplo real: <strong>ElectroSoluciones, electricista en
+                                Barcelona</strong></div>
+                    </div>
+                    <!-- Pintores -->
+                    <div class="category-card">
+                        <div class="category-icon">🎨</div>
+                        <h3>Pintores</h3>
+                        <div class="example-tag">Ejemplo real: <strong>Pinturas López, pintor en Valencia</strong></div>
+                    </div>
+                    <!-- Carpinteros -->
+                    <div class="category-card">
+                        <div class="category-icon">🪚</div>
+                        <h3>Carpinteros</h3>
+                        <div class="example-tag">Ejemplo real: <strong>Carpintería García, carpintero en
+                                Sevilla</strong></div>
+                    </div>
+                    <!-- Cerrajeros -->
+                    <div class="category-card">
+                        <div class="category-icon">🔑</div>
+                        <h3>Cerrajeros</h3>
+                        <div class="example-tag">Ejemplo real: <strong>Cerrajería 24h, cerrajero en Zaragoza</strong>
+                        </div>
+                    </div>
+                    <!-- Jardineros -->
+                    <div class="category-card">
+                        <div class="category-icon">🌿</div>
+                        <h3>Jardineros</h3>
+                        <div class="example-tag">Ejemplo real: <strong>Jardines Verdes, jardinero en Málaga</strong>
+                        </div>
+                    </div>
+                    <!-- Limpieza -->
+                    <div class="category-card">
+                        <div class="category-icon">🧹</div>
+                        <h3>Limpieza</h3>
+                        <div class="example-tag">Ejemplo real: <strong>Limpiezas Express, empresa de limpieza en
+                                Bilbao</strong></div>
+                    </div>
+                    <!-- Placas Solares -->
+                    <div class="category-card">
+                        <div class="category-icon">☀️</div>
+                        <h3>Placas Solares</h3>
+                        <div class="example-tag">Ejemplo real: <strong>SolarTech, instaladores solares en
+                                Valencia</strong></div>
+                    </div>
+                    <!-- Aire Acondicionado -->
+                    <div class="category-card">
+                        <div class="category-icon">❄️</div>
+                        <h3>Aire Acondicionado</h3>
+                        <div class="example-tag">Ejemplo real: <strong>ClimaFácil, aire acondicionado en Madrid</strong>
+                        </div>
+                    </div>
+                    <!-- Reformas -->
+                    <div class="category-card">
+                        <div class="category-icon">🏗️</div>
+                        <h3>Reformas</h3>
+                        <div class="example-tag">Ejemplo real: <strong>Reformas Modernas, reformas en Barcelona</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -817,34 +638,19 @@
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-number">1</div>
-                        <h3>Darse de alta</h3>
-                        <p>El profesional nos facilita sus datos básicos y experiencia.</p>
+                        <h3>Solicita tu web</h3>
+                        <p>Eliges tu profesión y nos facilitas tus datos básicos.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">2</div>
-                        <h3>Creamos tu web</h3>
-                        <p>Diseñamos una landing page profesional optimizada para SEO.</p>
+                        <h3>Creamos tu página</h3>
+                        <p>Diseñamos una landing page optimizada con tus servicios.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">3</div>
                         <h3>Recibe clientes</h3>
-                        <p>Tu negocio aparece en Google y empiezas a recibir llamadas y mensajes.</p>
+                        <p>Tu negocio aparece en Google y empiezas a recibir llamadas.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Cities -->
-        <section class="cities">
-            <div class="container">
-                <h2>Servicios en las ciudades principales</h2>
-                <div class="city-grid">
-                    <a href="/barcelona/fontanero" class="city-link">Barcelona</a>
-                    <a href="/madrid/fontanero" class="city-link">Madrid</a>
-                    <a href="/valencia/fontanero" class="city-link">Valencia</a>
-                    <a href="/sevilla/fontanero" class="city-link">Sevilla</a>
-                    <a href="/zaragoza/fontanero" class="city-link">Zaragoza</a>
-                    <a href="/malaga/fontanero" class="city-link">Málaga</a>
                 </div>
             </div>
         </section>
@@ -854,7 +660,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Beneficios para tu negocio</h2>
-                    <p>Por qué miles de profesionales eligen LocalPro para su presencia online.</p>
+                    <p>Deja de perder clientes por no tener presencia online.</p>
                 </div>
                 <div class="benefits-grid">
                     <div class="benefit-card">
@@ -863,29 +669,24 @@
                         <p>Aparece cuando tus potenciales clientes buscan servicios en tu zona.</p>
                     </div>
                     <div class="benefit-card">
-                        <div class="benefit-icon">💎</div>
-                        <h3>Web Profesional</h3>
-                        <p>Tu negocio transmitirá confianza y autoridad desde el primer segundo.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">⚡</div>
-                        <h3>Página ultra-rápida</h3>
-                        <p>Optimizadas para móviles para que ningún cliente se pierda por lentitud.</p>
+                        <div class="benefit-icon">💰</div>
+                        <h3>Web sin costes elevados</h3>
+                        <p>Solución profesional adaptada al presupuesto de un autónomo.</p>
                     </div>
                     <div class="benefit-card">
                         <div class="benefit-icon">📍</div>
-                        <h3>SEO Local fuerte</h3>
-                        <p>Estrategias específicas para dominar las búsquedas en tu ciudad o barrio.</p>
+                        <h3>Optimización SEO Local</h3>
+                        <p>Estrategias específicas para posicionarte en tu ciudad o barrio.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Rápida y Móvil</h3>
+                        <p>Diseño que carga al instante y se ve perfecto en cualquier móvil.</p>
                     </div>
                     <div class="benefit-card">
                         <div class="benefit-icon">🛠️</div>
-                        <h3>Sin complicaciones</h3>
-                        <p>Nosotros nos encargamos de todo el mantenimiento y soporte técnico.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">💰</div>
-                        <h3>Coste reducido</h3>
-                        <p>La mejor relación calidad-precio del mercado para autónomos.</p>
+                        <h3>Soporte y Mantenimiento</h3>
+                        <p>Nosotros nos encargamos de que todo funcione siempre.</p>
                     </div>
                 </div>
             </div>
@@ -899,19 +700,17 @@
                 </div>
                 <div class="testimonial-grid">
                     <div class="test-card">
-                        <p>“Gracias a LocalPro ahora tengo una web profesional y me llaman clientes cada semana. La
+                        <p>“Gracias a LocalPro ahora tengo una web profesional y recibo clientes cada semana. La
                             mejor inversión que he hecho.”</p>
-                        <div class="test-author">— Juan Pérez, Fontanero en Barcelona</div>
+                        <div class="test-author">— Juan Pérez, Fontanero en Madrid</div>
                     </div>
                     <div class="test-card">
-                        <p>“No tenía ni idea de tecnología y ellos lo hicieron todo. Ahora mi taller aparece en las
-                            primeras posiciones de Google.”</p>
-                        <div class="test-author">— María García, Pintora en Madrid</div>
+                        <p>“Sencillo, rápido y muy profesional. Mis clientes ahora confían más al ver mi web.”</p>
+                        <div class="test-author">— Ana Martínez, Reformas en Valencia</div>
                     </div>
                     <div class="test-card">
-                        <p>“Buscaba algo económico pero de calidad. Me sorprendió lo rápido que empezaron a llegar los
-                            contactos de WhatsApp.”</p>
-                        <div class="test-author">— Carlos Ruiz, Electricista en Valencia</div>
+                        <p>“Me sorprendió el precio para la calidad que ofrecen. El diseño es espectacular.”</p>
+                        <div class="test-author">— Carlos Ruiz, Electricista en Sevilla</div>
                     </div>
                 </div>
             </div>
@@ -921,7 +720,7 @@
         <section id="cta" class="cta-final">
             <div class="container">
                 <h2>¿Aún no tienes web para tu negocio?</h2>
-                <p>Empieza hoy con una web profesional a precio reducido y multiplica tus clientes.</p>
+                <p>Empieza hoy con una web profesional a precio reducido.</p>
                 <a href="#" class="btn btn-secondary" style="padding: 20px 40px; font-size: 1.25rem;">Crear mi web
                     ahora</a>
             </div>
@@ -933,26 +732,20 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="/" class="logo">Local<span>Pro</span></a>
-                    <p style="margin-top: 20px; color: var(--secondary); max-width: 300px;">Calidad profesional para
-                        negocios locales. La plataforma líder en digitalización de autónomos en España.</p>
+                    <p style="margin-top: 20px; color: var(--text-muted); max-width: 300px;">Calidad profesional para
+                        negocios locales.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Categorías</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Electricistas</a></li>
-                        <li><a href="#">Fontaneros</a></li>
-                        <li><a href="#">Pintores</a></li>
-                        <li><a href="#">Reformas</a></li>
-                    </ul>
-                </div>
+                <!-- Links removed for B2B Landing focus, keeping contact/legal -->
                 <div class="footer-col">
                     <h4>Empresa</h4>
                     <ul class="footer-links">
                         <li><a href="#">Sobre nosotros</a></li>
                         <li><a href="#">Contacto</a></li>
                         <li><a href="#">Aviso Legal</a></li>
-                        <li><a href="#">Privacidad</a></li>
                     </ul>
+                </div>
+                <div class="footer-col">
+                    <!-- Spacer or Socials -->
                 </div>
             </div>
             <div class="copy">
@@ -961,68 +754,6 @@
         </div>
     </footer>
 
-    <script>
-        // Data injected from directory_generator.py
-        const businesses = [{"name": "Carpinteria de aluminio Jos-mar SL.", "slug": "carpinteria-de-aluminio-jos-mar-sl", "category": "Carpintero aluminio", "city": "Barcelona"}, {"name": "CARPINTERIA DE ALUMINIO ALUXLINEA S.L.", "slug": "carpinteria-de-aluminio-aluxlinea-sl", "category": "Carpintero aluminio", "city": "Barcelona"}, {"name": "ELECTRICISTA LEANDRO", "slug": "electricista-leandro", "category": "Electricista", "city": "Barcelona"}, {"name": "Electricista Pompeya 24h", "slug": "electricista-pompeya-24h", "category": "Electricista", "city": "Barcelona"}, {"name": "AMJ PINTORES BARCELONA", "slug": "amj-pintores-barcelona", "category": "Pintor", "city": "Barcelona"}, {"name": "Jardinero Eixample Barcelona", "slug": "jardinero-eixample-barcelona", "category": "Jardinero", "city": "Barcelona"}, {"name": "Basicgarden", "slug": "basicgarden", "category": "Jardinero", "city": "Barcelona"}, {"name": "Jarclos", "slug": "jarclos", "category": "Jardinero", "city": "Barcelona"}, {"name": "Del&San", "slug": "delsan", "category": "Limpieza", "city": "Barcelona"}, {"name": "LUCIN COCINAS - REFORMA DE INTERIORES.", "slug": "lucin-cocinas-reforma-de-interiores", "category": "Reformas", "city": "L'Hospitalet de Llobregat"}, {"name": "Ikra Reformas e Interiorismo, S.L.", "slug": "ikra-reformas-e-interiorismo-sl", "category": "Reformas", "city": "L'Hospitalet de Llobregat"}, {"name": "Reformas AJ MENA", "slug": "reformas-aj-mena", "category": "Reformas", "city": "L'Hospitalet de Llobregat"}, {"name": "San Josep Banys I Cuines", "slug": "san-josep-banys-i-cuines", "category": "Reformas", "city": "L'Hospitalet de Llobregat"}, {"name": "Reformas J y P", "slug": "reformas-j-y-p", "category": "Reformas", "city": "L'Hospitalet de Llobregat"}, {"name": "Codina", "slug": "codina", "category": "Reformas", "city": "L'Hospitalet de Llobregat"}, {"name": "Reformas Loaiza", "slug": "reformas-loaiza", "category": "Reformas", "city": "L'Hospitalet de Llobregat"}, {"name": "Reformas.integral", "slug": "reformasintegral", "category": "Reformas", "city": "L'Hospitalet de Llobregat"}, {"name": "Carpinteria de Alumino J.Julve S.L.", "slug": "carpinteria-de-alumino-jjulve-sl", "category": "Carpintero aluminio", "city": "L'Hospitalet de Llobregat"}, {"name": "Carpinteria de aluminio Aluvizu Decor", "slug": "carpinteria-de-aluminio-aluvizu-decor", "category": "Carpintero aluminio", "city": "L'Hospitalet de Llobregat"}, {"name": "Aluminios Guerrero BCN", "slug": "aluminios-guerrero-bcn", "category": "Carpintero aluminio", "city": "L'Hospitalet de Llobregat"}, {"name": "MONTAJE CMG 2022 S.L", "slug": "montaje-cmg-2022-sl", "category": "Carpintero aluminio", "city": "L'Hospitalet de Llobregat"}, {"name": "Mi espacio int", "slug": "mi-espacio-int", "category": "Fontanero", "city": "L'Hospitalet de Llobregat"}, {"name": "Fontanero en bellvitge", "slug": "fontanero-en-bellvitge", "category": "Fontanero", "city": "L'Hospitalet de Llobregat"}, {"name": "Fontanero,electricista,pintor, reformas, lampista", "slug": "fontaneroelectricistapintor-reformas-lampista", "category": "Fontanero", "city": "L'Hospitalet de Llobregat"}, {"name": "Macris", "slug": "macris", "category": "Fontanero", "city": "L'Hospitalet de Llobregat"}, {"name": "El Manetes Del Centre", "slug": "el-manetes-del-centre", "category": "Electricista", "city": "L'Hospitalet de Llobregat"}, {"name": "Instalaciones Lamai", "slug": "instalaciones-lamai", "category": "Electricista", "city": "L'Hospitalet de Llobregat"}, {"name": "Instalaciones DFG", "slug": "instalaciones-dfg", "category": "Electricista", "city": "L'Hospitalet de Llobregat"}, {"name": "O P Instal Sl | Electricista Hospitalet de Llobregat", "slug": "o-p-instal-sl-electricista-hospitalet-de-llobregat", "category": "Electricista", "city": "L'Hospitalet de Llobregat"}, {"name": "Conductos de Aire Acondicionado los Gallegos S.L.", "slug": "conductos-de-aire-acondicionado-los-gallegos-sl", "category": "Aire acondicionado", "city": "L'Hospitalet de Llobregat"}, {"name": "El Pintor del Barrio", "slug": "el-pintor-del-barrio", "category": "Pintor", "city": "L'Hospitalet de Llobregat"}, {"name": "Pintores La remunta", "slug": "pintores-la-remunta", "category": "Pintor", "city": "L'Hospitalet de Llobregat"}, {"name": "PINTOR MORA SL", "slug": "pintor-mora-sl", "category": "Pintor", "city": "L'Hospitalet de Llobregat"}, {"name": "Pintores Sant Josep", "slug": "pintores-sant-josep", "category": "Pintor", "city": "L'Hospitalet de Llobregat"}, {"name": "Florworld Garden Services S L", "slug": "florworld-garden-services-s-l", "category": "Jardinero", "city": "L'Hospitalet de Llobregat"}, {"name": "novanatura.jardineria", "slug": "novanaturajardineria", "category": "Jardinero", "city": "L'Hospitalet de Llobregat"}, {"name": "Floristeria Jardinet", "slug": "floristeria-jardinet", "category": "Jardinero", "city": "L'Hospitalet de Llobregat"}, {"name": "Agencia Font", "slug": "agencia-font", "category": "Jardinero", "city": "L'Hospitalet de Llobregat"}, {"name": "Floristeria Grow Carmen", "slug": "floristeria-grow-carmen", "category": "Jardinero", "city": "L'Hospitalet de Llobregat"}, {"name": "Cerrajero Alex L'Hospitalet de Llobregat", "slug": "cerrajero-alex-lhospitalet-de-llobregat", "category": "Cerrajero", "city": "L'Hospitalet de Llobregat"}, {"name": "Limpiezas Hospitalet de Llobregat - Empresa de limpieza", "slug": "limpiezas-hospitalet-de-llobregat-empresa-de-limpieza", "category": "Limpieza", "city": "L'Hospitalet de Llobregat"}, {"name": "mcnet servicios de limpieza integrales", "slug": "mcnet-servicios-de-limpieza-integrales", "category": "Limpieza", "city": "L'Hospitalet de Llobregat"}, {"name": "FACHADAS Y BAJANTES S.L", "slug": "fachadas-y-bajantes-sl", "category": "Limpieza", "city": "L'Hospitalet de Llobregat"}, {"name": "On Interiorisme, cuines i banys, SL", "slug": "on-interiorisme-cuines-i-banys-sl", "category": "Reformas", "city": "Badalona"}, {"name": "G&G Reformas", "slug": "gg-reformas", "category": "Reformas", "city": "Badalona"}, {"name": "totdecor tot cuina, s.l", "slug": "totdecor-tot-cuina-sl", "category": "Reformas", "city": "Badalona"}, {"name": "Reformas Integrales Badalona Mario", "slug": "reformas-integrales-badalona-mario", "category": "Reformas", "city": "Badalona"}, {"name": "Ensalum", "slug": "ensalum", "category": "Carpintero aluminio", "city": "Badalona"}, {"name": "Carpinteria De Aluminio Cristaleria TJ", "slug": "carpinteria-de-aluminio-cristaleria-tj", "category": "Carpintero aluminio", "city": "Badalona"}, {"name": "Aluminios Y metales Realce S.L.U", "slug": "aluminios-y-metales-realce-slu", "category": "Carpintero aluminio", "city": "Badalona"}, {"name": "Moder Alum", "slug": "moder-alum", "category": "Carpintero aluminio", "city": "Badalona"}, {"name": "BADAMETAL", "slug": "badametal", "category": "Carpintero aluminio", "city": "Badalona"}, {"name": "Alfonso Montilla Corral", "slug": "alfonso-montilla-corral", "category": "Carpintero aluminio", "city": "Badalona"}, {"name": "Fontanero", "slug": "fontanero", "category": "Fontanero", "city": "Badalona"}, {"name": "Universal Assistance", "slug": "universal-assistance", "category": "Fontanero", "city": "Badalona"}, {"name": "FONTANERO Y ELECTRICISTA MARC", "slug": "fontanero-y-electricista-marc", "category": "Fontanero", "city": "Badalona"}, {"name": "ELECTRICISTAS BADALONA", "slug": "electricistas-badalona", "category": "Electricista", "city": "Badalona"}, {"name": "Electricidad Urgente Bcn \u2705\u2b50\u2b50\u2b50\u2b50\u2b50", "slug": "electricidad-urgente-bcn", "category": "Electricista", "city": "Badalona"}, {"name": "Barnatecnic", "slug": "barnatecnic", "category": "Aire acondicionado", "city": "Badalona"}, {"name": "21 grados", "slug": "21-grados", "category": "Aire acondicionado", "city": "Badalona"}, {"name": "Barnainstal", "slug": "barnainstal", "category": "Aire acondicionado", "city": "Badalona"}, {"name": "Helios Energy Europe Sl", "slug": "helios-energy-europe-sl", "category": "Placas solares", "city": "Badalona"}, {"name": "Electofluids Solar Sl", "slug": "electofluids-solar-sl", "category": "Placas solares", "city": "Badalona"}, {"name": "PINTOR EXPRESS", "slug": "pintor-express", "category": "Pintor", "city": "Badalona"}, {"name": "Pindeco", "slug": "pindeco", "category": "Pintor", "city": "Badalona"}, {"name": "Fernando Herrera Hidalgo", "slug": "fernando-herrera-hidalgo", "category": "Pintor", "city": "Badalona"}, {"name": "lbdeco es", "slug": "lbdeco-es", "category": "Pintor", "city": "Badalona"}, {"name": "Little Garden Solutions Grow Shop", "slug": "little-garden-solutions-grow-shop", "category": "Jardinero", "city": "Badalona"}, {"name": "LIMPIEZAS PLATA", "slug": "limpiezas-plata", "category": "Limpieza", "city": "Badalona"}, {"name": "Limpiezas Neteco", "slug": "limpiezas-neteco", "category": "Limpieza", "city": "Badalona"}, {"name": "Limpiezas Badalona - Empresa de limpieza en Badalona", "slug": "limpiezas-badalona-empresa-de-limpieza-en-badalona", "category": "Limpieza", "city": "Badalona"}, {"name": "EMPRESA DE RESTAURACION Y REHABILITACION DE FACHADAS", "slug": "empresa-de-restauracion-y-rehabilitacion-de-fachadas", "category": "Limpieza", "city": "Badalona"}, {"name": "Styl Cuines", "slug": "styl-cuines", "category": "Reformas", "city": "Sabadell"}, {"name": "DUTXA PLAT SABADELL", "slug": "dutxa-plat-sabadell", "category": "Reformas", "city": "Sabadell"}, {"name": "MOSQUITERAS SABADELL", "slug": "mosquiteras-sabadell", "category": "Carpintero aluminio", "city": "Sabadell"}, {"name": "ContraHUMITAT", "slug": "contrahumitat", "category": "Reformas", "city": "Sabadell"}, {"name": "R.Manaut", "slug": "rmanaut", "category": "Fontanero", "city": "Sabadell"}, {"name": "Instalaciones Vilchez: Electricista y fontanero", "slug": "instalaciones-vilchez-electricista-y-fontanero", "category": "Fontanero", "city": "Sabadell"}, {"name": "El Fontanero Juan", "slug": "el-fontanero-juan", "category": "Fontanero", "city": "Sabadell"}, {"name": "Algoma Instalaciones", "slug": "algoma-instalaciones", "category": "Fontanero", "city": "Sabadell"}, {"name": "Instal\u00b7lacions M.P.", "slug": "installacions-mp", "category": "Fontanero", "city": "Sabadell"}, {"name": "Averias 24 Horas", "slug": "averias-24-horas", "category": "Fontanero", "city": "Sabadell"}, {"name": "electricidad NG EMERGENCIAS 24h,agua , gas , datos , industrial ,domiciliaria", "slug": "electricidad-ng-emergencias-24hagua-gas-datos-industrial-domiciliaria", "category": "Electricista", "city": "Sabadell"}, {"name": "El llauner del barri", "slug": "el-llauner-del-barri", "category": "Electricista", "city": "Sabadell"}, {"name": "Instalaciones Jorvid.", "slug": "instalaciones-jorvid", "category": "Electricista", "city": "Sabadell"}, {"name": "CLICON S.C.C.L.", "slug": "clicon-sccl", "category": "Aire acondicionado", "city": "Sabadell"}, {"name": "Instalaciones T. Osuna", "slug": "instalaciones-t-osuna", "category": "Aire acondicionado", "city": "Sabadell"}, {"name": "artyestuc pintors", "slug": "artyestuc-pintors", "category": "Pintor", "city": "Sabadell"}, {"name": "PINTORTINOS", "slug": "pintortinos", "category": "Pintor", "city": "Sabadell"}, {"name": "SBD Revestiments", "slug": "sbd-revestiments", "category": "Pintor", "city": "Sabadell"}, {"name": "PINTADECOR. Sbd", "slug": "pintadecor-sbd", "category": "Pintor", "city": "Sabadell"}, {"name": "La ceba jardins", "slug": "la-ceba-jardins", "category": "Jardinero", "city": "Sabadell"}, {"name": "Cerrajeros Luis Aperturas", "slug": "cerrajeros-luis-aperturas", "category": "Cerrajero", "city": "Sabadell"}, {"name": "Roser 1988", "slug": "roser-1988", "category": "Cerrajero", "city": "Sabadell"}, {"name": "CerrajerosCalmet37", "slug": "cerrajeroscalmet37", "category": "Cerrajero", "city": "Sabadell"}, {"name": "Reformas Barcelona", "slug": "reformas-barcelona", "category": "Reformas", "city": "Terrassa"}, {"name": "Idc Cocinas", "slug": "idc-cocinas", "category": "Reformas", "city": "Terrassa"}, {"name": "moncuinesdisseny", "slug": "moncuinesdisseny", "category": "Reformas", "city": "Terrassa"}, {"name": "Reformas Integrales J.Terret", "slug": "reformas-integrales-jterret", "category": "Reformas", "city": "Terrassa"}, {"name": "Reformas Integrales", "slug": "reformas-integrales", "category": "Reformas", "city": "Terrassa"}, {"name": "Josal Confort S.L.", "slug": "josal-confort-sl", "category": "Fontanero", "city": "Terrassa"}, {"name": "Mapesi Terrassa Sl", "slug": "mapesi-terrassa-sl", "category": "Fontanero", "city": "Terrassa"}, {"name": "Ruiz", "slug": "ruiz", "category": "Fontanero", "city": "Terrassa"}, {"name": "Antonio Alvarez Corral", "slug": "antonio-alvarez-corral", "category": "Fontanero", "city": "Terrassa"}, {"name": "Mi instalador", "slug": "mi-instalador", "category": "Fontanero", "city": "Terrassa"}, {"name": "Electricidad Jaime Lorenzo", "slug": "electricidad-jaime-lorenzo", "category": "Electricista", "city": "Terrassa"}, {"name": "Amperio Network Electricidad", "slug": "amperio-network-electricidad", "category": "Electricista", "city": "Terrassa"}, {"name": "Electricidad Quimi", "slug": "electricidad-quimi", "category": "Electricista", "city": "Terrassa"}, {"name": "Instalaciones Electricas Maldonado", "slug": "instalaciones-electricas-maldonado", "category": "Electricista", "city": "Terrassa"}, {"name": "Electricistas terrassa", "slug": "electricistas-terrassa", "category": "Electricista", "city": "Terrassa"}, {"name": "Electricistas Terrassa - Electricidad TerraElectra", "slug": "electricistas-terrassa-electricidad-terraelectra", "category": "Electricista", "city": "Terrassa"}, {"name": "APFCLIMA2023", "slug": "apfclima2023", "category": "Aire acondicionado", "city": "Terrassa"}, {"name": "InfinitySun S.L.", "slug": "infinitysun-sl", "category": "Placas solares", "city": "Terrassa"}, {"name": "Guglie Pintores", "slug": "guglie-pintores", "category": "Pintor", "city": "Terrassa"}, {"name": "Rebonito Decoracion", "slug": "rebonito-decoracion", "category": "Pintor", "city": "Terrassa"}, {"name": "Pintor Hugo", "slug": "pintor-hugo", "category": "Pintor", "city": "Terrassa"}, {"name": "Pintor Vizuete", "slug": "pintor-vizuete", "category": "Pintor", "city": "Terrassa"}, {"name": "Remuntdecor S.C.P.", "slug": "remuntdecor-scp", "category": "Pintor", "city": "Terrassa"}, {"name": "seduction of the colors sl", "slug": "seduction-of-the-colors-sl", "category": "Pintor", "city": "Terrassa"}, {"name": "Checapintures Terrassa", "slug": "checapintures-terrassa", "category": "Pintor", "city": "Terrassa"}, {"name": "Pinturas & Reformas Bazoli", "slug": "pinturas-reformas-bazoli", "category": "Pintor", "city": "Terrassa"}, {"name": "Simanya jardiners (Can Roca)", "slug": "simanya-jardiners-can-roca", "category": "Jardinero", "city": "Terrassa"}, {"name": "Garden 4 Vents", "slug": "garden-4-vents", "category": "Jardinero", "city": "Terrassa"}, {"name": "Xavier Fontas", "slug": "xavier-fontas", "category": "Jardinero", "city": "Terrassa"}, {"name": "Raco Cerrajeros Terrassa", "slug": "raco-cerrajeros-terrassa", "category": "Cerrajero", "city": "Terrassa"}, {"name": "JaimeSerraller 24H/7D", "slug": "jaimeserraller-24h7d", "category": "Cerrajero", "city": "Terrassa"}, {"name": "Serralleria Aranda Luis", "slug": "serralleria-aranda-luis", "category": "Cerrajero", "city": "Terrassa"}, {"name": "La Llar de Les Claus", "slug": "la-llar-de-les-claus", "category": "Cerrajero", "city": "Terrassa"}, {"name": "Puertas Alarmas Y Automatismo Turkamatic", "slug": "puertas-alarmas-y-automatismo-turkamatic", "category": "Cerrajero", "city": "Terrassa"}, {"name": "Neteges Cabassa", "slug": "neteges-cabassa", "category": "Limpieza", "city": "Terrassa"}, {"name": "Mes Net S.L", "slug": "mes-net-sl", "category": "Limpieza", "city": "Terrassa"}, {"name": "Reformes D.M.", "slug": "reformes-dm", "category": "Reformas", "city": "Matar\u00f3"}, {"name": "Rafael Soler Ferrer", "slug": "rafael-soler-ferrer", "category": "Reformas", "city": "Matar\u00f3"}, {"name": "Reforma2", "slug": "reforma2", "category": "Reformas", "city": "Matar\u00f3"}, {"name": "Rekalum Carpinteria D' Alumini", "slug": "rekalum-carpinteria-d-alumini", "category": "Carpintero aluminio", "city": "Matar\u00f3"}, {"name": "Aluminis y Vidres DIAZ", "slug": "aluminis-y-vidres-diaz", "category": "Carpintero aluminio", "city": "Matar\u00f3"}, {"name": "Lampista( Felix Galeano y Ramon Linares )", "slug": "lampista-felix-galeano-y-ramon-linares", "category": "Fontanero", "city": "Matar\u00f3"}, {"name": "Electronova Instal\u00b7lacions", "slug": "electronova-installacions", "category": "Electricista", "city": "Matar\u00f3"}, {"name": "ELECTRO SERVEI", "slug": "electro-servei", "category": "Electricista", "city": "Matar\u00f3"}, {"name": "Instal\u00b7lacions Ismax s.l.", "slug": "installacions-ismax-sl", "category": "Electricista", "city": "Matar\u00f3"}, {"name": "Euro Light Group Serveis", "slug": "euro-light-group-serveis", "category": "Electricista", "city": "Matar\u00f3"}, {"name": "Instalaciones J.L. Chicote e Hijos, Sl", "slug": "instalaciones-jl-chicote-e-hijos-sl", "category": "Electricista", "city": "Matar\u00f3"}, {"name": "Instal\u00b7lacions Hidalgo Ruiz", "slug": "installacions-hidalgo-ruiz", "category": "Electricista", "city": "Matar\u00f3"}, {"name": "Pinturas y reformas tudela", "slug": "pinturas-y-reformas-tudela", "category": "Pintor", "city": "Matar\u00f3"}, {"name": "Pintores Mito", "slug": "pintores-mito", "category": "Pintor", "city": "Matar\u00f3"}, {"name": "Llibre Pintors", "slug": "llibre-pintors", "category": "Pintor", "city": "Matar\u00f3"}, {"name": "Pinturas Maresme", "slug": "pinturas-maresme", "category": "Pintor", "city": "Matar\u00f3"}, {"name": "Pintors Garriga | Maresme", "slug": "pintors-garriga-maresme", "category": "Pintor", "city": "Matar\u00f3"}, {"name": "Pint-Decor", "slug": "pint-decor", "category": "Pintor", "city": "Matar\u00f3"}, {"name": "J R PINTORS", "slug": "j-r-pintors", "category": "Pintor", "city": "Matar\u00f3"}, {"name": "Eduard Sanchez Espin", "slug": "eduard-sanchez-espin", "category": "Pintor", "city": "Matar\u00f3"}, {"name": "Vives P. Benavent", "slug": "vives-p-benavent", "category": "Jardinero", "city": "Matar\u00f3"}, {"name": "Monjardin.multiservice", "slug": "monjardinmultiservice", "category": "Jardinero", "city": "Matar\u00f3"}, {"name": "A one Locks Solutions", "slug": "a-one-locks-solutions", "category": "Cerrajero", "city": "Matar\u00f3"}, {"name": "Pavid Net S L", "slug": "pavid-net-s-l", "category": "Limpieza", "city": "Matar\u00f3"}, {"name": "SERVINET MARESME - SERVICIOS DE LIMPIEZA", "slug": "servinet-maresme-servicios-de-limpieza", "category": "Limpieza", "city": "Matar\u00f3"}, {"name": "Aluminios Ancar", "slug": "aluminios-ancar", "category": "Carpintero aluminio", "city": "Granollers"}, {"name": "ALUMINIOS MIGUEL, S.L", "slug": "aluminios-miguel-sl", "category": "Carpintero aluminio", "city": "Granollers"}, {"name": "Fontanero y Electricista 24H", "slug": "fontanero-y-electricista-24h", "category": "Fontanero", "city": "Granollers"}, {"name": "Instalaciones Llestanos S L", "slug": "instalaciones-llestanos-s-l", "category": "Fontanero", "city": "Granollers"}, {"name": "Instalaciones G Manga", "slug": "instalaciones-g-manga", "category": "Fontanero", "city": "Granollers"}, {"name": "Electric2", "slug": "electric2", "category": "Electricista", "city": "Granollers"}, {"name": "Girbau Ace by Nimnar", "slug": "girbau-ace-by-nimnar", "category": "Aire acondicionado", "city": "Granollers"}, {"name": "Jose Barrios Pintor fino, limpio y responsable", "slug": "jose-barrios-pintor-fino-limpio-y-responsable", "category": "Pintor", "city": "Granollers"}, {"name": "PINTOR GRANOLLERS CENTRE", "slug": "pintor-granollers-centre", "category": "Pintor", "city": "Granollers"}, {"name": "Jorge Busamia, Sl", "slug": "jorge-busamia-sl", "category": "Jardinero", "city": "Granollers"}, {"name": "Cerrajero Luis 24 Horas", "slug": "cerrajero-luis-24-horas", "category": "Cerrajero", "city": "Granollers"}, {"name": "Serralleria Montpart", "slug": "serralleria-montpart", "category": "Cerrajero", "city": "Granollers"}, {"name": "el teu serraller alfred", "slug": "el-teu-serraller-alfred", "category": "Cerrajero", "city": "Granollers"}, {"name": "cerrajeros nou barris jordy", "slug": "cerrajeros-nou-barris-jordy", "category": "Cerrajero", "city": "Granollers"}, {"name": "Serraller Soriano 1987", "slug": "serraller-soriano-1987", "category": "Cerrajero", "city": "Granollers"}, {"name": "Limpiezas Granollers - Empresa de Limpieza en Granollers", "slug": "limpiezas-granollers-empresa-de-limpieza-en-granollers", "category": "Limpieza", "city": "Granollers"}, {"name": "Reformas Vangi", "slug": "reformas-vangi", "category": "Reformas", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "Construccion y reformas Integrales", "slug": "construccion-y-reformas-integrales", "category": "Reformas", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "Novavida Reformas Integrales Sant Cugat", "slug": "novavida-reformas-integrales-sant-cugat", "category": "Reformas", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "REFORMAS INTEGRALES 24H S.L", "slug": "reformas-integrales-24h-sl", "category": "Reformas", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "SZ Reformas Integrales", "slug": "sz-reformas-integrales", "category": "Reformas", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "Reformas al Cuadrado", "slug": "reformas-al-cuadrado", "category": "Reformas", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "Aroaluminis Tot En Alumini", "slug": "aroaluminis-tot-en-alumini", "category": "Carpintero aluminio", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "Tecnoelectric", "slug": "tecnoelectric", "category": "Electricista", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "Neix Instalnova 25", "slug": "neix-instalnova-25", "category": "Electricista", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "Instaladores Placas Solares", "slug": "instaladores-placas-solares", "category": "Placas solares", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "S.M Pinturas revestimiento y mas", "slug": "sm-pinturas-revestimiento-y-mas", "category": "Pintor", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "Jardi art Sant Cugat", "slug": "jardi-art-sant-cugat", "category": "Jardinero", "city": "Sant Cugat del Vall\u00e8s"}, {"name": "tucerrajeroSantCugat", "slug": "tucerrajerosantcugat", "category": "Cerrajero", "city": "Sant Cugat del Vall\u00e8s"}];
-
-        const resultsGrid = document.getElementById('resultsGrid');
-        const mainSearch = document.getElementById('mainSearch');
-        const catFilter = document.getElementById('catFilter');
-        const searchBtn = document.getElementById('searchBtn');
-        const resultsInfo = document.getElementById('resultsInfo');
-
-        function renderResults(filtered) {
-            resultsGrid.innerHTML = '';
-
-            if (filtered.length === 0) {
-                resultsGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px;">No se encontraron resultados para tu búsqueda.</div>';
-                resultsInfo.innerText = '0 profesionales encontrados';
-                return;
-            }
-
-            resultsInfo.innerText = `${filtered.length} profesionales encontrados`;
-
-            filtered.forEach(biz => {
-                const card = document.createElement('div');
-                card.className = 'biz-card';
-                card.innerHTML = `
-                    <div class="biz-tag">${biz.category}</div>
-                    <h3>${biz.name}</h3>
-                    <p>📍 ${biz.city}</p>
-                    <div class="biz-footer">
-                        <a href="${biz.slug}/" class="biz-link">Ver perfil profesional →</a>
-                    </div>
-                `;
-                resultsGrid.appendChild(card);
-            });
-        }
-
-        function filterData() {
-            const term = mainSearch.value.toLowerCase();
-            const cat = catFilter.value.toLowerCase();
-
-            const filtered = businesses.filter(biz => {
-                const matchesTerm = biz.name.toLowerCase().includes(term) ||
-                    biz.city.toLowerCase().includes(term) ||
-                    biz.category.toLowerCase().includes(term);
-                const matchesCat = cat === '' || biz.category.toLowerCase().includes(cat);
-
-                return matchesTerm && matchesCat;
-            });
-
-            renderResults(filtered);
-        }
-
-        searchBtn.addEventListener('click', filterData);
-        mainSearch.addEventListener('keyup', (e) => { if (e.key === 'Enter') filterData(); });
-        catFilter.addEventListener('change', filterData);
-
-        // Initial render (show a few or all)
-        renderResults(businesses.slice(0, 12));
-
-        // SVG Icons if needed can be added here
-    </script>
-
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
@@ -1030,11 +761,21 @@
       "@type": "WebSite",
       "name": "LocalPro",
       "url": "https://localpro.top",
+      "description": "Creación de páginas web profesionales para negocios locales y autónomos.",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://localpro.top/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "LocalPro",
+      "description": "Diseño web para negocios locales.",
+      "priceRange": "$$"
     }
     </script>
 
