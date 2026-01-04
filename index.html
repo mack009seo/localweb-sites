@@ -164,6 +164,28 @@
             color: var(--primary);
         }
 
+        .main-nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .main-nav a {
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .main-nav a:hover {
+            color: var(--primary);
+            text-shadow: 0 0 10px rgba(129, 140, 248, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+            }
+        }
+
         /* --- Hero Section --- */
         .hero {
             padding: 180px 0 100px;
@@ -467,6 +489,145 @@
             letter-spacing: 0.05em;
         }
 
+        /* --- Pricing --- */
+        .pricing {
+            padding: 80px 0;
+            background: #0f172a;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .price-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            border: 1px solid var(--border);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+        }
+
+        .price-card.popular {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.15);
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .price-header h3 {
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 20px 0 40px;
+            flex-grow: 1;
+        }
+
+        .price-features li {
+            margin-bottom: 12px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .price-features li::before {
+            content: "✓";
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* --- About Us --- */
+        .about-section {
+            padding: 80px 0;
+            background: var(--background);
+        }
+
+        .about-content {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-stats {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+
+            .price-card.popular {
+                transform: scale(1);
+            }
+        }
+
         /* --- CTA Final --- */
         .cta-final {
             padding: 100px 0;
@@ -584,6 +745,14 @@
     <header>
         <div class="container">
             <a href="/" class="logo">Local<span>Pro</span></a>
+
+            <nav class="main-nav">
+                <a href="#about">Sobre Nosotros</a>
+                <a href="#testimonials">Testimonios</a>
+                <a href="#pricing">Precios</a>
+                <a href="#examples">Ejemplos</a>
+            </nav>
+
             <div class="header-btns">
                 <a href="#cta" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Crear mi web</a>
             </div>
@@ -747,8 +916,111 @@
             </div>
         </section>
 
+        <!-- About Us -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="section-header" style="text-align: left; margin-bottom: 20px;">
+                            <h2>Ayudando al pequeño comercio desde 2024</h2>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px;">
+                            En LocalPro, creemos que internet no debería ser solo para las grandes empresas. Nuestra
+                            misión es democratizar el acceso a la tecnología, permitiendo que fontaneros, carpinteros y
+                            autónomos de toda España tengan una presencia digital de primera clase sin arruinarse.
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 1.1rem;">
+                            Combinamos diseño premium con precios justos, eliminando la barrera técnica para que tú solo
+                            te preocupes de hacer bien tu trabajo.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">+500</div>
+                            <div class="stat-label">Negocios Digitalizados</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Clientes Satisfechos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24h</div>
+                            <div class="stat-label">Soporte Técnico</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">TOP 1</div>
+                            <div class="stat-label">En Diseño Local</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Planes transparentes, sin letra pequeña</h2>
+                    <p>Elige la opción que mejor se adapte al momento actual de tu negocio.</p>
+                </div>
+                <div class="pricing-grid">
+                    <!-- Basic -->
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>Básico</h3>
+                            <div class="price">29€<span>/mes</span></div>
+                            <p style="color: var(--text-muted);">Ideal para empezar a tener presencia.</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>Ficha en directorio LocalPro</li>
+                            <li>Enlace a WhatsApp</li>
+                            <li>Descripción básica</li>
+                            <li>Soporte por email</li>
+                        </ul>
+                        <a href="#cta" class="btn btn-secondary" style="width: 100%;">Empezar</a>
+                    </div>
+
+                    <!-- Pro -->
+                    <div class="price-card popular">
+                        <div class="popular-badge">Recomendado</div>
+                        <div class="price-header">
+                            <h3>Profesional</h3>
+                            <div class="price">49€<span>/mes</span></div>
+                            <p style="color: var(--text-muted);">Tu propia web completa y optimizada.</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>Todo lo del plan Básico</li>
+                            <li><strong>Web propia (landing page)</strong></li>
+                            <li>Dominio personalizado</li>
+                            <li>Optimización SEO Local</li>
+                            <li>Botón de llamada directo</li>
+                            <li>Alojamiento incluido</li>
+                        </ul>
+                        <a href="#cta" class="btn btn-primary" style="width: 100%;">Crear mi web</a>
+                    </div>
+
+                    <!-- Business -->
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>Empresa</h3>
+                            <div class="price">99€<span>/mes</span></div>
+                            <p style="color: var(--text-muted);">Para negocios que quieren dominar.</p>
+                        </div>
+                        <ul class="price-features">
+                            <li>Todo lo del plan Profesional</li>
+                            <li>Hasta 5 páginas internas</li>
+                            <li>Blog con contenido mensual</li>
+                            <li>Campañas de Google Ads</li>
+                            <li>Soporte prioritario 24/7</li>
+                        </ul>
+                        <a href="#cta" class="btn btn-secondary" style="width: 100%;">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Testimonials -->
-        <section class="testimonials">
+        <section id="testimonials" class="testimonials">
             <div class="container">
                 <div class="section-header">
                     <h2>Lo que dicen nuestros profesionales</h2>
