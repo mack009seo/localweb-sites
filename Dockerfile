@@ -31,7 +31,9 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Exponer el puerto del bridge
-EXPOSE 3001
+# Exponer el puerto estándar de la nube (8080)
+EXPOSE 8080
+ENV PORT=8080
 
 # Comando para arrancar el bridge
 CMD ["node", "whatsapp-bridge/bridge.js"]
